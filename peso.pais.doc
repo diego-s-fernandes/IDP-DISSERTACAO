@@ -1,0 +1,51 @@
+<table style="border-collapse:collapse; border:none;">
+<tr>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; text-align:left; ">w.weights</th>
+<th style="border-top: double; text-align:center; font-style:italic; font-weight:normal; padding:0.2cm; border-bottom:1px solid black; ">Unit Names</th>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">0.40</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">Argentina</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">0.30</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">Russian Federation</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">0.14</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">Mexico</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">0.09</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">Uruguay</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">0.02</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">Chile</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">0.01</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">South Africa</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">0.01</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">Colombia</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">0.01</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">Paraguay</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">0.01</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">China</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">0.01</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; ">Peru</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; border-bottom: double; ">0.01</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center; border-bottom: double; ">Bolivia</td>
+</tr>
+</table>
+
