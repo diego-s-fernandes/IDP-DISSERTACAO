@@ -40,7 +40,7 @@ ggthemr("greyscale")
 rodar <- read_csv("rodar.csv") %>% 
   clean_names()
 
-unique(rodar$region_economy)
+
 
 ```
 
@@ -179,8 +179,8 @@ stargazer(peso.var, type = "text")
 stargazer(synth.tables$tab.pred, type = "html", out = "prep.doc")
 stargazer(synth.tables$tab.w, type = "latex")
 stargazer(peso.pais, type = "text")
-sjPlot::tab_df(peso.pais,file="peso.pais.doc")
-sjPlot::tab_df(peso.var, file="peso.var.doc")
+#sjPlot::tab_df(peso.pais,file="peso.pais.doc")
+#sjPlot::tab_df(peso.var, file="peso.var.doc")
 
 
 

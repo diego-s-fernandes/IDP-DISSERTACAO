@@ -63,6 +63,7 @@ rodar$regio[rodar$region_economy== "Chile"] <- "13"
 rodar$regio[rodar$region_economy== "Chile"] <- "13"
 rodar$regio <- as.numeric(rodar$regio)
 
+rodar
 rodar <- rodar %>% 
   filter(region_economy != "India") %>% 
   mutate(gdp_per_capita_constant_2010_us = log(gdp_per_capita_constant_2010_us)) %>% 
