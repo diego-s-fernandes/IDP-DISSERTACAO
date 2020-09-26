@@ -4,7 +4,7 @@ author: "Diego dos Santos Fernandes"
 date: "07/06/2020"
 output: html_document
 editor_options: 
-  chunk_output_type: inline
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -27,7 +27,7 @@ library(ggthemr)
 
 
 ```{r}
-ggthemr("greyscale")
+#ggthemr("greyscale")
 ```
 
 
