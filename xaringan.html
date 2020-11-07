@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Teste para apresentação</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Diego dos Santos Fernandes" />
+    <meta name="date" content="2020-11-07" />
+    <script src="xaringan_files/header-attrs-2.3/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Teste para apresentação
+## Preparando a dissertação
+### Diego dos Santos Fernandes
+### Instituto Brasiliense de Direito Público - IDP
+### 2020-11-07
+
+---
+
+
+
+
+
+---
+
+# 1. Introdução
+
+
+- **Objetivo**: Avaliar a mudança dos critérios de analises de atos de concentração (Lei 12.529/2011) nas fusões e aquisições internacionais no Brasil.Principalmente ex-post para ex-ante
+- **Hipótese**: Análise de atos de concentração ex-post criaria uma insegurança jurídica, principalmente para as empresas internacionais.
+- **Metodologia**: *Synthetic Control Method*  
+- **Resultado**: De acordo com método utilizado, houve impacto estimado no número de fusões e aquisições em 742 operações realizadas.
+
+---
+
+# 2. Revisão da Literatura
+
+- Defesa da Concorrência e análise de atos de concentração
+- Método de controle Sintético
+
+---
+# 2.1 Defesa da Concorrência e análise de atos de concentração
+ - Em menos de 20 anos o Brasil alterou o marco que regulava a defesa da concorrência: Lei nº 8.884/1994 e a Lei 12.529/2011
+ - Lei nº 8.884/1994: alterações importantes
+     - Dentro do Contexto das Reformas regulatórias da década de noventa
+     - Transformou o Cade em Autarquia
+     - Mas apresentava um controle *ex-post* de Atos de Concentração.
+     - Este tipo de análise geraria uma insegurança jurídica
+     
+     
+---
+
+#2.1 Defesa da Concorrência e análise de atos de concentração
+
+- Lei 12.529/11
+     - Intenção de cobrir lacunas e inserir inovações na legislação antitruste
+    - Centralização de algumas atribuições ao Cade: "SuperCade"
+    - Inovações processuais
+    - Instituiu a análise prévia de atos de Concentração
+    
+---
+
+# 2.2 Método de Controle Sintético 
+- Synthetic Control Method (SCM)
+- Abadie e Gardeazabal (2003) e Abadie *et al.* (2010)
+- Estimar os efeitos causais de intervenções
+- **Uma combinação de unidades não afetadas geralmente fornece comparação mais apropriada** 
+- Unidades Agregadas
+- Uma unidade de Tratamento
+- Análise comparativa
+- Aplicação em Ciências Política, Economia e Saúde
+- Aplicação em Avaliação de Políticas Públicas
+
+
+---
+
+# 2.2 SCM - Apresentação do Modelo
+
+ - Amostra
+    - `\((J+1)\)` unidades
+    - `\((j=1)\)` a unidade de tratamento
+ - Unidade Temporal
+    - `\(t=1,…T\)`
+    - `\(T_0\)` é o último período pré-intervenção
+    - `\((1&lt;T_{0~}&lt;T)\)`
+    
+---
+ # 2.2 Apresentação do Modelo
+
+  - `\(\mathbf{Y}\)` é a variável de interesse - F&amp;A internacionais
+  - `\(\mathbf{Y_{1t}^{I}}\)` a unidade `\(j = 1\)`  no tempo  `\(t\)`  que sofreu a intervenção
+  - `\(\mathbf{Y_{1t}^{N}}\)` a unidade de tratamento cado não sofresse a intervenção
+  - `\(\mathbf{Y_{jt}^{N}}\)` as unidades que não sofreram a intervenção
+ O efeito da intervenção no período t é dado por: 
+`$$\tau_{1t}=Y_{1t}^{I}- Y_{1t}^{N}$$`
+ 
+---
+# 2.2 Apresentação do Modelo
+&lt;style&gt;
+body {
+text-align: justify}
+&lt;/style&gt;
+
+O método controle sintético forma uma unidade sintética através de uma combinação convexa de todo as unidades de comparação definida pelo vetor `\(W=~ \left( w_{2}, \ldots , w_{j+1} \right) ^{'}\)`, sendo `\(0 \leq w_{j} \leq 1\)`. Portanto:
+
+ 
+    
+`$$\mathbf{\hat{Y}_{1t}^{N}}=  \sum _{j=2}^{J+1}w_{j}Y_{jt}^{N}$$`
+Com isso também encontramos `\(\hat{ \tau}_{1t}\)`
+`$$\hat{ \tau}_{1t}=~ Y_{1t}^{I}- \hat{Y}_{1t}^{N}$$`
+
+--- 
+---
+# 2.2 Apresentação do Modelo
+Assim, Seja  `\(X_{1}\)` um vetor de dimensão  `\(\left( k \times 1 \right)\)`  contanto as caraterísticas da unidade de tratamento e  `\(X_{0}~\)` como uma uma matriz  `\(k~\mathrm{ \times  J}\)`  contendo os valores da mesma variável dentre aos candidatos à unidade sintéticas (donor pool). Assim, encontra-se `\(W^{\ast} \textbf{ }\)`como o valor de  `\(W\)` que minimiza a expressão:
+
+`$$\min_w \quad\Vert X_{1}-X_{0}W \Vert V= \sqrt[]{ \left( X_{1}-X_{0}W \right) ^{'}V \left( X_{1}-X_{0}W \right)}$$`
+`\(V_{k\mathrm{ \times }k}\)` matriz simétrica semidefinida que tem função de atribuir os pesos em cada variável. 
+`$$\mathbf{V^{*}} = \Vert Y_{1}^{P}-Y_{0}^{P}\mathbf{W^{*}}(V) \Vert$$`
+---
+# 3. Metodologia
+
+ 1. Orientado a dados
+ 2. Uma vez definido a variável de interesse e a unidade de tratamento:
+     - Delimitação do *donor pool* e das variáveis
+     - Base de dados
+     - Apresentação dos Resultados e testes.
+     
+---
+
+## 3.2 Base de dados - *escopo temporal*
+
+- Delimitação do Tempo
+    - Dados de 2000 a 2018
+-  Data da Intervenção
+     - A Lei 12.529/2011 com efeitos em 2012
+     - O ano 2011 escolhido como intervenção
+
+---
+
+## 3.2 Base de dados - *Donor pool*
+
+- *Donor pool*: países dos BRICS, México e os países da América do Sul
+    - **Exceção**: Venezuela e Índia
+    - *Venezuela*: confiabilidade dos dados
+    - *Índia*: regulamentação similar em 2011
+    
+--- 
+
+## 3.2 Base de dados - *Variáveis*   
+
+1. **World Delevopment Indicator (WDI)** 
+   - *GDP per capita (constant 2010 US$)* 
+   - *GDP growth (annual %)*
+   - *Foreign direct investment, net inflows (% of GDP)*
+   - *GDP per capita growth (annual %), Final consumption expenditure (annual % growth)*
+2. **Heritage Foundation**
+ - *Index of Economic Freedom*
+
+
+---
+---
+#Resultados
+
+- Peso de cada País na Unidade Sintética
+
+`$$\begin{table}
+\caption{Peso W na Unidade Sintétitica} 
+\begin{tabular}{l | c |}
+Country &amp; W.weigth \\
+\hline \hline
+Argentina &amp; 0.3---5 \\ 
+Mexico &amp; 0.28 \\
+Russian Federation &amp; 0.25 \\
+Chile &amp; 0.11 \\
+Uruguay &amp; 0.00 \\
+South Africa &amp; 0.00 \\
+China &amp; 0.00 \\
+Colombia &amp; 0.00 \\
+Peru &amp; 0.00 \\
+Bolivia &amp; 0.00 \\
+Paraguay &amp; 0.00 \\
+\end{tabular}`
+\end{table}$$`
+---
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create();
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

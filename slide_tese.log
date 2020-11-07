@@ -1,20 +1,20 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.7.19)  20 JUL 2020 18:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.28)  7 NOV 2020 17:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **slide_tese.tex
 (./slide_tese.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-07-17>
+L3 programming layer <2020-09-24>
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamer.cl
 s
-Document Class: beamer 2020/05/06 v3.58 A class for typesetting presentations
+Document Class: beamer 2020/07/22 v3.59 A class for typesetting presentations
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerbas
 emodes.sty
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbo
 x.sty
-Package: etoolbox 2020/07/15 v2.5i e-TeX tools for LaTeX (JAW)
+Package: etoolbox 2020/08/24 v2.5j e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count168
 )
 \beamer@tempbox=\box45
@@ -137,7 +137,7 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/pdf
 tex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+File: pdftex.def 2020/08/26 v1.2 Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen158
 \Gin@req@width=\dimen159
@@ -164,11 +164,11 @@ Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 pgfrcs.code.tex
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revisi
 on.tex)
-Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
+Package: pgfrcs 2020/09/28 v3.1.6 (3.1.6)
 ))
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlaye
 r/pgfsys.code.tex
-Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
+Package: pgfsys 2020/09/28 v3.1.6 (3.1.6)
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/
 pgfkeys.code.tex
@@ -202,27 +202,27 @@ pgfkeysfiltered.code.tex
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlaye
 r/pgf.cfg
-File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
+File: pgf.cfg 2020/09/28 v3.1.6 (3.1.6)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlaye
 r/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2020/01/08 v3.1.5b (3.1.5b)
+File: pgfsys-pdftex.def 2020/09/28 v3.1.6 (3.1.6)
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlaye
 r/pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
+File: pgfsys-common-pdf.def 2020/09/28 v3.1.6 (3.1.6)
 )))
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlaye
 r/pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+File: pgfsyssoftpath.code.tex 2020/09/28 v3.1.6 (3.1.6)
 \pgfsyssoftpath@smallbuffer@items=\count267
 \pgfsyssoftpath@bigbuffer@items=\count268
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlaye
 r/pgfsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+File: pgfsysprotocol.code.tex 2020/09/28 v3.1.6 (3.1.6)
 ))
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.st
 y
@@ -245,7 +245,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcore.code.tex
-Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
+Package: pgfcore 2020/09/28 v3.1.6 (3.1.6)
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfma
 th.code.tex
@@ -288,7 +288,7 @@ thfloat.code.tex
 t.code.tex)
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+File: pgfcorepoints.code.tex 2020/09/28 v3.1.6 (3.1.6)
 \pgf@picminx=\dimen173
 \pgf@picmaxx=\dimen174
 \pgf@picminy=\dimen175
@@ -306,19 +306,19 @@ File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcorepathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+File: pgfcorepathconstruct.code.tex 2020/09/28 v3.1.6 (3.1.6)
 \pgf@path@lastx=\dimen187
 \pgf@path@lasty=\dimen188
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcorepathusage.code.tex
-File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+File: pgfcorepathusage.code.tex 2020/09/28 v3.1.6 (3.1.6)
 \pgf@shorten@end@additional=\dimen189
 \pgf@shorten@start@additional=\dimen190
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+File: pgfcorescopes.code.tex 2020/09/28 v3.1.6 (3.1.6)
 \pgfpic=\box56
 \pgf@hbox=\box57
 \pgf@layerbox@main=\box58
@@ -326,64 +326,64 @@ File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcoregraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+File: pgfcoregraphicstate.code.tex 2020/09/28 v3.1.6 (3.1.6)
 \pgflinewidth=\dimen191
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcoretransformations.code.tex
-File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+File: pgfcoretransformations.code.tex 2020/09/28 v3.1.6 (3.1.6)
 \pgf@pt@x=\dimen192
 \pgf@pt@y=\dimen193
 \pgf@pt@temp=\dimen194
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+File: pgfcorequick.code.tex 2020/09/28 v3.1.6 (3.1.6)
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcoreobjects.code.tex
-File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+File: pgfcoreobjects.code.tex 2020/09/28 v3.1.6 (3.1.6)
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcorepathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+File: pgfcorepathprocessing.code.tex 2020/09/28 v3.1.6 (3.1.6)
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+File: pgfcorearrows.code.tex 2020/09/28 v3.1.6 (3.1.6)
 \pgfarrowsep=\dimen195
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+File: pgfcoreshade.code.tex 2020/09/28 v3.1.6 (3.1.6)
 \pgf@max=\dimen196
 \pgf@sys@shading@range@num=\count272
 \pgf@shadingcount=\count273
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+File: pgfcoreimage.code.tex 2020/09/28 v3.1.6 (3.1.6)
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+File: pgfcoreexternal.code.tex 2020/09/28 v3.1.6 (3.1.6)
 \pgfexternal@startupbox=\box59
 ))
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+File: pgfcorelayers.code.tex 2020/09/28 v3.1.6 (3.1.6)
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcoretransparency.code.tex
-File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+File: pgfcoretransparency.code.tex 2020/09/28 v3.1.6 (3.1.6)
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+File: pgfcorepatterns.code.tex 2020/09/28 v3.1.6 (3.1.6)
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcorerdf.code.tex
-File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+File: pgfcorerdf.code.tex 2020/09/28 v3.1.6 (3.1.6)
 )))
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/xx
 color.sty
@@ -401,7 +401,7 @@ Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmd
 s.sty
-Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 ))
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperre
 f.sty
@@ -562,7 +562,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 etranslator.sty
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/translator/trans
 lator.sty
-Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
+Package: translator 2020-08-03 v1.12c Easy translation of strings in LaTeX
 ))
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerbas
 emisc.sty)
@@ -855,16 +855,9 @@ erthemeinfolines.sty))
 orthemebeaver.sty)
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerfon
 tthemestructurebold.sty)
-(c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/grffile/grffile.
-sty
-Package: grffile 2019/11/11 v2.1 Extended file name support for graphics (legac
-y)
-Package grffile Info: This package is an empty stub for compatibility on input 
-line 40.
-)
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3back
-end-pdfmode.def
-File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
+end-pdftex.def
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count320
 \l__pdf_internal_box=\box74
 ) (./slide_tese.aux
@@ -877,24 +870,24 @@ LaTeX Warning: Label `' multiply defined.
 )
 \openout1 = `slide_tese.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -942,7 +935,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box75
-Package hyperref Info: Link coloring OFF on input line 112.
+Package hyperref Info: Link coloring OFF on input line 113.
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref
 .sty
@@ -958,59 +951,59 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count321
 )
-LaTeX Info: Redefining \ref on input line 112.
-LaTeX Info: Redefining \pageref on input line 112.
-LaTeX Info: Redefining \nameref on input line 112.
+LaTeX Info: Redefining \ref on input line 113.
+LaTeX Info: Redefining \pageref on input line 113.
+LaTeX Info: Redefining \nameref on input line 113.
 (./slide_tese.out) (./slide_tese.out)
 \@outlinefile=\write5
 \openout5 = `slide_tese.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 112.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 113.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 112.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 113.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 112.
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 113.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 112.
+(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 113.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/lmr/m/n on input line 112.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 112.
+(Font)                  OT1/lmss/m/n --> T1/lmr/m/n on input line 113.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> T1/lmss/b/n on input line 112.
+(Font)                  OT1/lmr/bx/n --> T1/lmss/b/n on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> T1/lmss/b/n on input line 112.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 112.
+(Font)                  OT1/lmr/bx/n --> T1/lmss/b/n on input line 113.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 112.
+(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 112.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 112.
+(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 113.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 112.
+(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 112.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 112.
+(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 113.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 112.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 112.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 113.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 112.
+(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 113.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 112.
+(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/lmss/b/n --> T1/lmr/b/n on input line 112.
+(Font)                  OT1/lmss/b/n --> T1/lmr/b/n on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/lmss/b/n --> T1/lmss/b/n on input line 112.
+(Font)                  T1/lmss/b/n --> T1/lmss/b/n on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 112.
+(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 112.
+(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/lmtt/m/n --> T1/lmtt/b/n on input line 112.
+(Font)                  T1/lmtt/m/n --> T1/lmtt/b/n on input line 113.
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/translator/trans
 lator-basic-dictionary-English.dict
@@ -1036,12 +1029,12 @@ Dictionary: translator-numbers-dictionary, Language: English
 lator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 ) (./slide_tese.nav)
-Overfull \hbox (89.44028pt too wide) in paragraph at lines 112--112
+Overfull \hbox (89.44028pt too wide) in paragraph at lines 113--113
  [][]  \T1/lmss/bx/n/6 ([])  
  []
 
 
-Overfull \hbox (216.87344pt too wide) in paragraph at lines 112--112
+Overfull \hbox (216.87344pt too wide) in paragraph at lines 113--113
  [][][][]  
  []
 
@@ -1060,7 +1053,7 @@ Overfull \hbox (216.87344pt too wide) has occurred while \output is active
 {c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdf
 tex.map}]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 134.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 133.
 
 Overfull \hbox (89.44028pt too wide) has occurred while \output is active
  [][]  \T1/lmss/bx/n/6 ([])  
@@ -1087,12 +1080,12 @@ Overfull \hbox (216.87344pt too wide) has occurred while \output is active
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 
-173.
+169.
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmss.fd
 File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 173.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 169.
 
 Overfull \hbox (89.44028pt too wide) has occurred while \output is active
  [][]  \T1/lmss/bx/n/6 ([])  
@@ -1118,6 +1111,10 @@ Overfull \hbox (216.87344pt too wide) has occurred while \output is active
 [5
 
 ]
+Overfull \vbox (64.66473pt too high) detected at line 217
+ []
+
+
 Overfull \hbox (89.44028pt too wide) has occurred while \output is active
  [][]  \T1/lmss/bx/n/6 ([])  
  []
@@ -1131,49 +1128,49 @@ Overfull \hbox (216.87344pt too wide) has occurred while \output is active
 
 ]
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-257.
+245.
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-57.
+45.
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-257.
+245.
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-257.
+245.
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 257.
+(Font)              <10> on input line 245.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 257.
+(Font)              <7> on input line 245.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 257.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 257
+(Font)              <5> on input line 245.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 245
 .
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 257
+LaTeX Font Info:    Trying to load font information for U+msb on input line 245
 .
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 257.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 245.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 257.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 245.
 
-LaTeX Warning: Command \textellipsis invalid in math mode on input line 257.
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 245.
 
 
 Overfull \hbox (89.44028pt too wide) has occurred while \output is active
@@ -1189,27 +1186,27 @@ Overfull \hbox (216.87344pt too wide) has occurred while \output is active
 
 ]
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 290.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 275.
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <7> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 290.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 275.
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <5> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 290.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 275.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 290.
+(Font)              <10.95> on input line 275.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 290.
+(Font)              <8> on input line 275.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 290.
+(Font)              <6> on input line 275.
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10.95> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 290.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 275.
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <8> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 290.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 275.
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <6> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 290.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 275.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 290.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 275.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 290.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 275.
 
 Overfull \hbox (89.44028pt too wide) has occurred while \output is active
  [][]  \T1/lmss/bx/n/6 ([])  
@@ -1235,8 +1232,8 @@ Overfull \hbox (216.87344pt too wide) has occurred while \output is active
 [9
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 33
-8.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 31
+7.
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1265,7 +1262,7 @@ Overfull \hbox (216.87344pt too wide) has occurred while \output is active
 
 ]
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 388.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 361.
 
 
 Overfull \hbox (89.44028pt too wide) has occurred while \output is active
@@ -1317,7 +1314,7 @@ Overfull \hbox (216.87344pt too wide) has occurred while \output is active
 
 ]
 
-Package hyperref Warning: Ignoring empty anchor on input line 488.
+Package hyperref Warning: Ignoring empty anchor on input line 451.
 
 
 Overfull \hbox (89.44028pt too wide) has occurred while \output is active
@@ -1333,7 +1330,7 @@ Overfull \hbox (216.87344pt too wide) has occurred while \output is active
 
 ]
 
-Package hyperref Warning: Ignoring empty anchor on input line 510.
+Package hyperref Warning: Ignoring empty anchor on input line 471.
 
 
 Overfull \hbox (89.44028pt too wide) has occurred while \output is active
@@ -1348,13 +1345,13 @@ Overfull \hbox (216.87344pt too wide) has occurred while \output is active
 [17
 
 ]
-<synth.png, id=166, 970.3753pt x 548.0475pt>
+<synth.png, id=168, 970.3753pt x 548.0475pt>
 File: synth.png Graphic file (type png)
 <use synth.png>
-Package pdftex.def Info: synth.png  used on input line 521.
+Package pdftex.def Info: synth.png  used on input line 480.
 (pdftex.def)             Requested size: 342.30165pt x 193.32475pt.
 
-Overfull \vbox (15.26938pt too high) detected at line 521
+Overfull \vbox (15.26938pt too high) detected at line 480
  []
 
 
@@ -1370,10 +1367,10 @@ Overfull \hbox (216.87344pt too wide) has occurred while \output is active
 [18
 
  <./synth.png>]
-<gap.png, id=175, 825.0825pt x 429.10312pt>
+<gap.png, id=177, 825.0825pt x 429.10312pt>
 File: gap.png Graphic file (type png)
 <use gap.png>
-Package pdftex.def Info: gap.png  used on input line 532.
+Package pdftex.def Info: gap.png  used on input line 489.
 (pdftex.def)             Requested size: 342.30214pt x 178.0221pt.
 
 Overfull \hbox (89.44028pt too wide) has occurred while \output is active
@@ -1388,13 +1385,13 @@ Overfull \hbox (216.87344pt too wide) has occurred while \output is active
 [19
 
  <./gap.png>]
-<p.png, id=185, 426.6339pt x 284.5029pt>
+<p.png, id=187, 426.6339pt x 284.5029pt>
 File: p.png Graphic file (type png)
 <use p.png>
-Package pdftex.def Info: p.png  used on input line 543.
+Package pdftex.def Info: p.png  used on input line 498.
 (pdftex.def)             Requested size: 342.29707pt x 228.26248pt.
 
-Overfull \vbox (50.2071pt too high) detected at line 543
+Overfull \vbox (50.2071pt too high) detected at line 498
  []
 
 
@@ -1422,13 +1419,13 @@ Overfull \hbox (216.87344pt too wide) has occurred while \output is active
 [21
 
 ]
-<rsme.png, id=201, 426.6339pt x 284.5029pt>
+<rsme.png, id=204, 426.6339pt x 284.5029pt>
 File: rsme.png Graphic file (type png)
 <use rsme.png>
-Package pdftex.def Info: rsme.png  used on input line 570.
+Package pdftex.def Info: rsme.png  used on input line 520.
 (pdftex.def)             Requested size: 342.29707pt x 228.26248pt.
 
-Overfull \vbox (50.2071pt too high) detected at line 570
+Overfull \vbox (50.2071pt too high) detected at line 520
  []
 
 
@@ -1445,10 +1442,10 @@ Overfull \hbox (216.87344pt too wide) has occurred while \output is active
 
  <./rsme.png>]
 
-Package hyperref Warning: Ignoring empty anchor on input line 626.
+Package hyperref Warning: Ignoring empty anchor on input line 574.
 
 
-Overfull \vbox (6.72487pt too high) detected at line 626
+Overfull \vbox (6.72487pt too high) detected at line 574
  []
 
 
@@ -1485,11 +1482,11 @@ Overfull \hbox (216.87344pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `slide_tese.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 646.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 646.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 591.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 591.
 (./slide_tese.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 646.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 646.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 591.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 591.
 Package rerunfilecheck Info: File `slide_tese.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1497,13 +1494,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 21451 strings out of 482854
- 400798 string characters out of 5955055
- 627277 words of memory out of 5000000
- 36214 multiletter control sequences out of 15000+600000
+ 21527 strings out of 482823
+ 403420 string characters out of 5954258
+ 629773 words of memory out of 5000000
+ 36319 multiletter control sequences out of 15000+600000
  629178 words of font info for 88 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 59i,15n,63p,798b,690s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,15n,63p,798b,684s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ma
 thit.enc}{c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/l
 m/lm-ec.enc}{c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvip
@@ -1525,10 +1522,10 @@ ype1/public/lm/lmsso8.pfb><c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/
 fonts/type1/public/lm/lmsy10.pfb><c:/Users/Samsung/AppData/Roaming/TinyTeX/texm
 f-dist/fonts/type1/public/lm/lmsy6.pfb><c:/Users/Samsung/AppData/Roaming/TinyTe
 X/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on slide_tese.pdf (24 pages, 398698 bytes).
+Output written on slide_tese.pdf (24 pages, 398755 bytes).
 PDF statistics:
- 291 PDF objects out of 1000 (max. 8388607)
- 228 compressed objects within 3 object streams
- 72 named destinations out of 1000 (max. 500000)
+ 297 PDF objects out of 1000 (max. 8388607)
+ 234 compressed objects within 3 object streams
+ 76 named destinations out of 1000 (max. 500000)
  105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
