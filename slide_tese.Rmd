@@ -120,7 +120,7 @@ $$\hat{ \tau}_{1t}=~ Y_{1t}^{I}- \hat{Y}_{1t}^{N}$$
 
 <p style="text-align: justify;">
 
-Assim, Seja $X_{1}$ um vetor de dimensão $\left( k \times 1 \right)$ contanto as caraterísticas da unidade de tratamento e $X_{0}~$ como uma uma matriz $k~\mathrm{ \times J}$ contendo os valores da mesma variável dentre aos candidatos à unidade sintéticas (donor pool). Assim Abadie e Gardeazabal (2003), Abadie \textit{et al}. (2010) e Abadie (2019) definiram $W^{\ast} \textbf{ }$como o valor de $W$ \textbf{ }que minimiza a expressão:
+Assim, Seja $X_{1}$ um vetor de dimensão $\left( k \times 1 \right)$ contanto as características pré-tratamento da unidade de interesse e $X_{0}~$ como uma uma matriz $k~\mathrm{ \times J}$ contendo os valores da mesmas caracaterísticas dentre aos candidatos à unidade sintéticas (donor pool). Assim Abadie e Gardeazabal (2003), Abadie \textit{et al}. (2010) e Abadie (2019) definiram $W^{\ast} \textbf{ }$como o valor de $W$ \textbf{ }que minimiza a expressão:
 
 </p>
 
