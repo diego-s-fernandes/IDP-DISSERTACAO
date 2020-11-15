@@ -50,6 +50,7 @@ header-includes:
     -   Centralização de algumas atribuições ao Cade: "SuperCade"
     -   Inovações processuais
     -   Instituiu a análise prévia de atos de Concentração
+    -   Diversas outras eficiências
 
 ## 2.2 Método de Controle Sintético
 
