@@ -18,7 +18,7 @@ header-includes:
 
 ## 1. Introdução
 
--   **Objetivo**: Avaliar a mudança dos critérios de analises de atos de concentração (Lei 12.529/2011) nas fusões e aquisições internacionais no Brasil.Principalmente ex-post para ex-ante
+-   **Objetivo**: Avaliar a mudança dos critérios de analises de atos de concentração (Lei 12.529/2011) nas fusões e aquisições internacionais no Brasil. Principalmente ex-post para ex-ante
 -   **Hipótese**: Análise de atos de concentração ex-post criaria uma insegurança jurídica, principalmente para as empresas internacionais.
 -   **Metodologia**: *Synthetic Control Method*
 -   **Resultado**: De acordo com método utilizado, houve impacto estimado no número de fusões e aquisições em 742 operações realizadas.
@@ -37,7 +37,8 @@ header-includes:
 
     -   Dentro do Contexto das Reformas regulatórias da década de noventa
     -   Transformou o Cade em Autarquia
-    -   Mas apresentava um controle *ex-post* de Atos de Concentração.
+    -   Controle *ex-post* de Atos de Concentração
+    -   Atribuições compartilhadas com outros órgãos: SEAE e SDE
     -   Este tipo de análise geraria uma insegurança jurídica
     -   **Contraponto**: vantagens das análises *ex-post*
 
@@ -58,9 +59,8 @@ header-includes:
 -   **Uma combinação de unidades não afetadas geralmente fornece comparação mais apropriada**
 -   Unidades Agregadas
 -   Uma unidade de Tratamento
--   Análise comparativa
--   Aplicação em Ciências Política, Economia e Saúde
--   Aplicação em Avaliação de Políticas Públicas
+-   Análise comparativa: Políticas Públicas, Economia, REL, CP e Saúde
+
 
 ## 2.2 SCM - Apresentação do Modelo
 
@@ -109,7 +109,7 @@ O método controle sintético forma uma unidade sintética através de uma combi
 $$\mathbf{\hat{Y}_{1t}^{N}}=  \sum _{j=2}^{J+1}w_{j}Y_{jt}^{N},$$
 \end{alertblock}
 ```
-Com isso também encontramos $\hat{ \tau}_{1t}$
+Com isso, também encontramos $\hat{ \tau}_{1t}$
 
 ### Estimação do Parâmetro
 
@@ -168,7 +168,7 @@ $V_{k\mathrm{ \times }k}$ matriz simétrica semidefinida que tem função de atr
     -   *GDP per capita (constant 2010 US\$)*
     -   *GDP growth (annual %)*
     -   *Foreign direct investment, net inflows (% of GDP)*
-    -   *GDP per capita growth (annual %), Final consumption expenditure (annual % growth)*
+    -   *Final consumption expenditure (annual % growth)*
 
 2.  **Heritage Foundation**
 
@@ -242,11 +242,11 @@ Index\ of \ Economic \ Freedom & $59.745$ & $60.071$ & $61.940$ \\
 
 ## GAP
 
-![GAP entre o número de Fusões e Aquisiões](gap.png)
+![GAP entre o número de F&A](gap.png)
 
 ## Teste de Palcebo
 
-![GAP entre o número de Fusões e Aquisiões](p.png)
+![GAP entre o número de F&A](p.png)
 
 ## Cálculo MSPE ratio1
 
