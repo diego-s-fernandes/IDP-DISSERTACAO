@@ -82,7 +82,7 @@ header-includes:
 
     -   $\mathbf{Y}$ é a variável de interesse - F&A internacionais
     -   $\mathbf{Y_{1t}^{I}}$ a unidade $j = 1$ no tempo $t$ que sofreu a intervenção
-    -   $\mathbf{Y_{1t}^{N}}$ a unidade de tratamento cado não sofresse a intervenção
+    -   $\mathbf{Y_{1t}^{N}}$ a unidade de tratamento caso não sofresse a intervenção
     -   $\mathbf{Y_{jt}^{N}}$ as unidades que não sofreram a intervenção
 
     ```{=tex}
@@ -183,7 +183,7 @@ $V_{k\mathrm{ \times }k}$ matriz simétrica semidefinida que tem função de atr
 \begin{tabular}{l | c |}
 Country & W.weigth \\
 \hline \hline
-Argentina & 0.3---5 \\ 
+Argentina & 0.35 \\ 
 Mexico & 0.28 \\
 Russian Federation & 0.25 \\
 Chile & 0.11 \\
@@ -245,7 +245,7 @@ Index\ of \ Economic \ Freedom & $59.745$ & $60.071$ & $61.940$ \\
 
 ![GAP entre o número de F&A](gap.png)
 
-## Teste de Palcebo
+## Teste de Placebo
 
 ![GAP entre o número de F&A](p.png)
 
