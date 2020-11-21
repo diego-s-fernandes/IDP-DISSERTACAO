@@ -1,0 +1,392 @@
+---
+title: "teste modelo"
+author: "Diego dos Santos Fernandes"
+date: "07/06/2020"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(Synth)
+library(readr)
+library(SCtools)
+library(janitor)
+library(stargazer)
+library(broom)
+library(tidyverse)
+library(gsynth)
+library(panelView)
+library(sjPlot)
+library(texreg)
+library(ggthemr)
+```
+
+
+
+```{r}
+ggthemr("greyscale")
+```
+
+
+# R Markdown
+
+
+
+```{r cars}
+
+rodar <- read_csv("rodar.csv") %>% 
+  clean_names()
+
+
+
+```
+
+```{r}
+
+rodar$regio
+rodar$regio[rodar$region_economy == "South Africa" ] <- "1"
+rodar$regio[rodar$region_economy == "China"] <- "2" 
+rodar$regio[rodar$region_economy == "Argentina" ] <- "3"
+rodar$regio[rodar$region_economy == "Brazil"] <- "4" 
+rodar$regio[rodar$region_economy == "Colombia" ] <- "5" 
+rodar$regio[rodar$region_economy == "Mexico" ] <- "6"
+rodar$regio[rodar$region_economy == "Peru" ] <- "7"
+rodar$regio[rodar$region_economy == "Russian Federation"] <- "8"	
+rodar$regio[rodar$region_economy == "Bolivia"] <- "9"		
+rodar$regio[rodar$region_economy == "India"] <- "10"
+rodar$regio[rodar$region_economy == "Paraguay"] <- "11"
+rodar$regio[rodar$region_economy == "Uruguay"] <- "12"
+rodar$regio[rodar$region_economy== "Chile"] <- "13"
+rodar$regio[rodar$region_economy== "Chile"] <- "13"
+rodar$regio <- as.numeric(rodar$regio)
+
+rodar <- rodar %>% 
+  filter(region_economy != "India") %>% 
+  mutate(gdp_per_capita_constant_2010_us = log(gdp_per_capita_constant_2010_us))
+  
+
+# Eu retirei a índia pois o país teve uma série de regulamentações na área  concorrencial como demostra o site da competition commission of india, site:https://www.cci.gov.in/Regulation
+
+app <- as_data_frame(rodar)
+
+write_csv(app,"app.csv")
+
+glimpse(rodar)
+colnames(rodar)
+
+```
+
+
+```{r}
+
+dataprep.out <-
+              dataprep(foo = as.data.frame(rodar),
+                       predictors = c("gdp_per_capita_constant_2010_us",
+                                      "gdp_growth_annual_percent",
+                                      "foreign_direct_investment_net_inflows_percent_of_gdp",                                                                         "final_consumption_expenditure_annual_percent_growth",
+                                      "index_ef") ,
+                      #special.predictors =list( list("manufacturing_value_added_percent_of_gdp",seq(2001,2011,2),c("mean"))),
+                       
+                       predictors.op = "mean" ,
+                       time.predictors.prior = 2000:2010 ,
+                       dependent = "number",
+                       unit.variable = "regio",
+                       unit.names.variable = "region_economy" ,
+                       time.variable = "ano",
+                       treatment.identifier = 4,
+                       controls.identifier = c(1,2,5,6,7,8,9,11,12,13),
+                       time.optimize.ssr = 2000:2010,
+                       time.plot = 2000:2018
+                       )
+
+
+```
+
+
+```{r}
+#Visualizar matrizes criadas
+
+dataprep.out$X1
+ dataprep.out$Z1
+
+```
+
+
+```{r}
+### Encontrar W e V ótimos:
+## i) custom.v: Pode ser usado para imputar V, ou
+## ii) default: Escolhe V (entre matrizes diagonais) t.q. 
+## EQM de Y seja minimizado nos periodos pré-intervenção
+## Seja Z vetor das variáveis YP, encontrar V que minimiza
+## (Z1-Z0.W*(V))'(Z1-Z0.W*(V))
+## Portanto, synth minimiza a distancia de X, considerando
+## a V acima
+
+## Otimizaçao: Usa função de otimização quadrática com
+## restrição, mas pode ser alterado
+
+# Comando Synth: Encontra o W ótimo e V ótimo que identifica o controle sintético 
+# resolvendo um algoritmo de otimização para minimizar a distância entre X1
+# e X0
+
+###################################################
+ synth.out <- synth(data.prep.obj = dataprep.out,
+                    method = "BFGS")
+#ls(synth.out)
+
+gaps<- dataprep.out$Y1plot-(dataprep.out$Y0plot%*%synth.out$solution.w)
+
+DT_gap <- dataprep.out$Y1plot-(dataprep.out$Y0plot%*%synth.out$solution.w) %>% 
+  as.data.frame()
+
+```
+
+```{r}
+###################################################
+### Discrepâncias anuais no GDP do tratado e sintético: 
+###################################################
+ gaps <- dataprep.out$Y1plot - (dataprep.out$Y0plot %*% synth.out$solution.w)
+
+
+```
+
+```{r}
+###################################################
+### # Tabelas: 
+###################################################
+ synth.tables <- synth.tab(dataprep.res = dataprep.out,
+                           synth.res = synth.out
+                           )
+names(synth.tables)
+synth.tables$tab.w
+synth.tables$tab.pred
+synth.tables$tab.pred
+synth.tables$tab.v
+peso.var <- as_data_frame(synth.tables$tab.v)
+peso.pais <- as_data_frame(synth.tables$tab.w)
+comparacao <- tibble(synth.tables$tab.pred)
+ 
+stargazer(synth.tables$tab.pred, type = "text", output = "a.doc")  
+peso.pais <- peso.pais %>% 
+  select(w.weights,unit.names) %>% 
+  rename(`Unit Names` = unit.names) %>% 
+  arrange(desc(w.weights))
+
+stargazer(peso.var, type = "text")
+stargazer(synth.tables$tab.pred, type = "html", out = "prep.doc")
+stargazer(synth.tables$tab.w, type = "latex")
+stargazer(peso.pais, type = "text")
+#sjPlot::tab_df(peso.pais,file="peso.pais.doc")
+#sjPlot::tab_df(peso.var, file="peso.var.doc")
+
+
+
+
+```
+
+
+```{r}
+
+
+###################################################
+### # Resumindo resultados (pesos):: 
+###################################################
+synth.out$solution.w
+synth.tables$tab.w
+	
+```
+
+
+```{r}
+path_plot <- path.plot(synth.res = synth.out,
+          dataprep.res = dataprep.out, 
+					Ylab         = c("Number of cross-border M&A"),
+          Xlab         = c("Year"),
+          Legend       = c("Brazil","Synthetic Brazil"),
+          Legend.position = c("topleft")
+					
+					)
+abline(v   = 2011,
+       lty = 2)
+```
+
+```{r}
+
+gaps.plot(synth.res = synth.out,
+           dataprep.res = dataprep.out,
+           Ylab = "Gap in Cross-Border M&A",
+           Xlab = "Year",
+           Ylim = c(-50,150),
+            Main = NA
+           )
+xaxt="none"
+
+abline(v   = 2011,
+       lty = 2)
+```
+
+
+
+
+```{r}
+#usando o pacote SCtools
+
+ggthemr("greyscale")
+placebo <- generate_placebos(dataprep.out = dataprep.out,
+                             synth.out = synth.out, strategy = "multiprocess", Sigf.ipop = 2)
+
+p <- plot_placebos(placebo)
+p2 <- p
+#######33333#############################3
+
+p +
+   labs(
+    y = "Gap in Cross-Border M&A",
+    x = "Year"
+  )+
+ ylim(c(-170,250))+
+  theme(legend.position = "top")
+  
+ 
+
+save_plot("p.png", fig = ggplot2::last_plot(), width = 15, height = 10,
+  dpi = 300, theme = ggplot2::theme_get())
+
+########################################3
+ratio <- mspe.test(placebo)
+ratio$p.val
+
+ggthemr::ggthemr("greyscale")
+mspe_plot <- mspe.plot(placebo, discard.extreme = FALSE)
+mspe_plot
+save_plot("rsme.png", fig = ggplot2::last_plot(), width = 15, height = 10,
+  dpi = 300, theme = ggplot2::theme_get(), label.color = "black",
+  label.size = 2.4, axis.textsize = 0.8, axis.titlesize = 0.75,
+  legend.textsize = 0.6, legend.titlesize = 0.65, legend.itemsize = 0.5)
+
+```
+
+```{r}
+
+test_out <- mspe.test(placebo)
+test_out$p.val
+
+```
+
+
+
+
+
+
+```{r}
+#####
+ggthemr("greyscale")
+donnor <- as_data_frame(synth.tables$tab.w)
+
+
+
+gdonnor <- donnor %>% 
+  ggplot(aes(x = reorder(unit.names, w.weights), y = w.weights ))+
+  geom_col()+
+  labs(
+    x= "Países",
+    y = "Peso W"
+  )+
+    coord_flip()
+
+
+```
+
+#rodar o diff in diff
+
+```{r}
+robu <- rodar
+robu$time <- if_else(robu$ano >= 2011,1,0) 
+
+robu
+
+glimpse(robu)
+robu <- robu %>% 
+  rename(trat = regio) %>% 
+  mutate(trat = if_else(region_economy == "Brazil" , "1", "0")) %>% 
+  mutate(trat = as.numeric(trat))
+ 
+robu$did <-  robu$time * robu$trat  
+
+
+
+```
+
+
+```{r}
+
+
+
+reg1 <- lm( number ~  gdp_per_capita_constant_2010_us + gdp_growth_annual_percent + foreign_direct_investment_net_inflows_percent_of_gdp  + final_consumption_expenditure_annual_percent_growth +  index_ef + trat + time + did, data = robu)
+
+
+reg2 <- lm(number ~ trat + time + did, data = robu )
+
+summary(reg2)
+summary(reg1)
+
+
+stargazer(reg1,reg2, type= "latex")
+
+stargazer(reg2, type= "text")
+
+stargazer(reg2, reg1, type = "latex", title="Diferenças em diferenças",
+          dep.var.labels=c("Fusões e Aquisições Internacionais"),
+          digits=2, out = "comcontroles.doc")
+summary(reg2)
+
+tab_model(reg2, show.se = TRUE)
+tab_model(reg1, show.se = TRUE)
+stargazer(reg1, reg2, type= "html", out = "comcontroles.doc")
+
+wordreg(reg2, file = "texreg.doc")
+```
+
+
+
+
+
+
+```{r eval=FALSE, include=FALSE}
+ mult.dataprep.out <-multiple.synth(foo = as.data.frame(rodar),
+                       predictors = c("gdp_per_capita_constant_2010_us",
+                                      "gdp_growth_annual_percent",
+                                      "foreign_direct_investment_net_inflows_percent_of_gdp",                                                                         "final_consumption_expenditure_annual_percent_growth",
+                                      "index_ef") ,
+                       
+                      special.predictors =list( list("manufacturing_value_added_percent_of_gdp",seq(2001,2011,2),c("mean"))),
+                       
+                       predictors.op = "mean" ,
+                       time.predictors.prior = 2000:2010 ,
+                       dependent = "number",
+                       unit.variable = "regio",
+                       treatment.time = 2011,
+                       unit.names.variable = "region_economy" ,
+                       time.variable = "ano",
+                       treated.units = 4,
+                       control.units = c(1,2,3,5,6,7,8,9,11,12,13),
+                       time.optimize.ssr = 2000:2011,
+                       time.plot = 2000:2018,
+                       gen.placebos =  TRUE
+                       )
+
+ggthemr("greyscale")
+p_multi <- mult.dataprep.out$p
+
+p_multi +
+  theme(legend.position = "Bottom")
+```
+
+
+
+
+
+

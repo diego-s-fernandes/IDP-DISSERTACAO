@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.28)  15 NOV 2020 13:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.16)  16 NOV 2020 18:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **slide_tese.tex
 (./slide_tese.tex
-LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-09-24>
+LaTeX2e <2020-10-01> patch level 2
+L3 programming layer <2020-10-27> xparse <2020-03-03>
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamer.cl
 s
 Document Class: beamer 2020/07/22 v3.59 A class for typesetting presentations
@@ -14,21 +14,21 @@ Document Class: beamer 2020/07/22 v3.59 A class for typesetting presentations
 emodes.sty
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbo
 x.sty
-Package: etoolbox 2020/08/24 v2.5j e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count168
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count175
 )
-\beamer@tempbox=\box45
-\beamer@tempcount=\count169
-\c@beamerpauses=\count170
+\beamer@tempbox=\box47
+\beamer@tempcount=\count176
+\c@beamerpauses=\count177
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerbas
 edecode.sty
-\beamer@slideinframe=\count171
-\beamer@minimum=\count172
-\beamer@decode@box=\box46
+\beamer@slideinframe=\count178
+\beamer@minimum=\count179
+\beamer@decode@box=\box48
 )
-\beamer@commentbox=\box47
-\beamer@modecount=\count173
+\beamer@commentbox=\box49
+\beamer@modecount=\count180
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifpdf.st
 y
@@ -38,48 +38,48 @@ Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 y
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\headdp=\dimen134
-\footheight=\dimen135
-\sidebarheight=\dimen136
-\beamer@tempdim=\dimen137
-\beamer@finalheight=\dimen138
-\beamer@animht=\dimen139
-\beamer@animdp=\dimen140
-\beamer@animwd=\dimen141
-\beamer@leftmargin=\dimen142
-\beamer@rightmargin=\dimen143
-\beamer@leftsidebar=\dimen144
-\beamer@rightsidebar=\dimen145
-\beamer@boxsize=\dimen146
-\beamer@vboxoffset=\dimen147
-\beamer@descdefault=\dimen148
-\beamer@descriptionwidth=\dimen149
+\headdp=\dimen138
+\footheight=\dimen139
+\sidebarheight=\dimen140
+\beamer@tempdim=\dimen141
+\beamer@finalheight=\dimen142
+\beamer@animht=\dimen143
+\beamer@animdp=\dimen144
+\beamer@animwd=\dimen145
+\beamer@leftmargin=\dimen146
+\beamer@rightmargin=\dimen147
+\beamer@leftsidebar=\dimen148
+\beamer@rightsidebar=\dimen149
+\beamer@boxsize=\dimen150
+\beamer@vboxoffset=\dimen151
+\beamer@descdefault=\dimen152
+\beamer@descriptionwidth=\dimen153
 \beamer@lastskip=\skip47
-\beamer@areabox=\box48
-\beamer@animcurrent=\box49
-\beamer@animshowbox=\box50
-\beamer@sectionbox=\box51
-\beamer@logobox=\box52
-\beamer@linebox=\box53
-\beamer@sectioncount=\count174
-\beamer@subsubsectionmax=\count175
-\beamer@subsectionmax=\count176
-\beamer@sectionmax=\count177
-\beamer@totalheads=\count178
-\beamer@headcounter=\count179
-\beamer@partstartpage=\count180
-\beamer@sectionstartpage=\count181
-\beamer@subsectionstartpage=\count182
-\beamer@animationtempa=\count183
-\beamer@animationtempb=\count184
-\beamer@xpos=\count185
-\beamer@ypos=\count186
-\beamer@ypos@offset=\count187
-\beamer@showpartnumber=\count188
-\beamer@currentsubsection=\count189
-\beamer@coveringdepth=\count190
-\beamer@sectionadjust=\count191
-\beamer@tocsectionnumber=\count192
+\beamer@areabox=\box50
+\beamer@animcurrent=\box51
+\beamer@animshowbox=\box52
+\beamer@sectionbox=\box53
+\beamer@logobox=\box54
+\beamer@linebox=\box55
+\beamer@sectioncount=\count181
+\beamer@subsubsectionmax=\count182
+\beamer@subsectionmax=\count183
+\beamer@sectionmax=\count184
+\beamer@totalheads=\count185
+\beamer@headcounter=\count186
+\beamer@partstartpage=\count187
+\beamer@sectionstartpage=\count188
+\beamer@subsectionstartpage=\count189
+\beamer@animationtempa=\count190
+\beamer@animationtempb=\count191
+\beamer@xpos=\count192
+\beamer@ypos=\count193
+\beamer@ypos@offset=\count194
+\beamer@showpartnumber=\count195
+\beamer@currentsubsection=\count196
+\beamer@coveringdepth=\count197
+\beamer@sectionadjust=\count198
+\beamer@tocsectionnumber=\count199
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerbas
 eoptions.sty
@@ -99,31 +99,31 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 ty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count193
-\Gm@cntv=\count194
-\c@Gm@tempcnt=\count195
-\Gm@bindingoffset=\dimen150
-\Gm@wd@mp=\dimen151
-\Gm@odd@mp=\dimen152
-\Gm@even@mp=\dimen153
-\Gm@layoutwidth=\dimen154
-\Gm@layoutheight=\dimen155
-\Gm@layouthoffset=\dimen156
-\Gm@layoutvoffset=\dimen157
+\Gm@cnth=\count266
+\Gm@cntv=\count267
+\c@Gm@tempcnt=\count268
+\Gm@bindingoffset=\dimen154
+\Gm@wd@mp=\dimen155
+\Gm@odd@mp=\dimen156
+\Gm@even@mp=\dimen157
+\Gm@layoutwidth=\dimen158
+\Gm@layoutheight=\dimen159
+\Gm@layouthoffset=\dimen160
+\Gm@layoutvoffset=\dimen161
 \Gm@dimlist=\toks16
 ) (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size11.cl
 o
-File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+File: size11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/p
 gfcore.sty
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphic
 x.sty
-Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphic
 s.sty
-Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.st
 y
@@ -137,10 +137,10 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/pdf
 tex.def
-File: pdftex.def 2020/08/26 v1.2 Graphics/color driver for pdftex
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen158
-\Gin@req@width=\dimen159
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/
 pgfsys.sty
@@ -149,26 +149,24 @@ frcs.sty
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/
 pgfutil-common.tex
 \pgfutil@everybye=\toks17
-\pgfutil@tempdima=\dimen160
-\pgfutil@tempdimb=\dimen161
+\pgfutil@tempdima=\dimen164
+\pgfutil@tempdimb=\dimen165
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/
 pgfutil-common-lists.tex))
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/
 pgfutil-latex.def
-\pgfutil@abb=\box54
-(c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ms/everyshi.sty
-Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-))
+\pgfutil@abb=\box56
+)
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/
 pgfrcs.code.tex
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revisi
 on.tex)
-Package: pgfrcs 2020/09/28 v3.1.6 (3.1.6)
+Package: pgfrcs 2020/10/01 v3.1.6a (3.1.6a)
 ))
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlaye
 r/pgfsys.code.tex
-Package: pgfsys 2020/09/28 v3.1.6 (3.1.6)
+Package: pgfsys 2020/10/01 v3.1.6a (3.1.6a)
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/
 pgfkeys.code.tex
@@ -179,50 +177,50 @@ pgfkeys.code.tex
 pgfkeysfiltered.code.tex
 \pgfkeys@tmptoks=\toks20
 ))
-\pgf@x=\dimen162
-\pgf@y=\dimen163
-\pgf@xa=\dimen164
-\pgf@ya=\dimen165
-\pgf@xb=\dimen166
-\pgf@yb=\dimen167
-\pgf@xc=\dimen168
-\pgf@yc=\dimen169
-\pgf@xd=\dimen170
-\pgf@yd=\dimen171
+\pgf@x=\dimen166
+\pgf@y=\dimen167
+\pgf@xa=\dimen168
+\pgf@ya=\dimen169
+\pgf@xb=\dimen170
+\pgf@yb=\dimen171
+\pgf@xc=\dimen172
+\pgf@yc=\dimen173
+\pgf@xd=\dimen174
+\pgf@yd=\dimen175
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count196
-\c@pgf@countb=\count197
-\c@pgf@countc=\count198
-\c@pgf@countd=\count199
+\c@pgf@counta=\count269
+\c@pgf@countb=\count270
+\c@pgf@countc=\count271
+\c@pgf@countd=\count272
 \t@pgf@toka=\toks21
 \t@pgf@tokb=\toks22
 \t@pgf@tokc=\toks23
-\pgf@sys@id@count=\count266
+\pgf@sys@id@count=\count273
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlaye
 r/pgf.cfg
-File: pgf.cfg 2020/09/28 v3.1.6 (3.1.6)
+File: pgf.cfg 2020/10/01 v3.1.6a (3.1.6a)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlaye
 r/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2020/09/28 v3.1.6 (3.1.6)
+File: pgfsys-pdftex.def 2020/10/01 v3.1.6a (3.1.6a)
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlaye
 r/pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2020/09/28 v3.1.6 (3.1.6)
+File: pgfsys-common-pdf.def 2020/10/01 v3.1.6a (3.1.6a)
 )))
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlaye
 r/pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2020/09/28 v3.1.6 (3.1.6)
-\pgfsyssoftpath@smallbuffer@items=\count267
-\pgfsyssoftpath@bigbuffer@items=\count268
+File: pgfsyssoftpath.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+\pgfsyssoftpath@smallbuffer@items=\count274
+\pgfsyssoftpath@bigbuffer@items=\count275
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlaye
 r/pgfsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2020/09/28 v3.1.6 (3.1.6)
+File: pgfsysprotocol.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 ))
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.st
 y
@@ -245,7 +243,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcore.code.tex
-Package: pgfcore 2020/09/28 v3.1.6 (3.1.6)
+Package: pgfcore 2020/10/01 v3.1.6a (3.1.6a)
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfma
 th.code.tex
@@ -255,9 +253,9 @@ thcalc.code.tex
 thutil.code.tex)
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfma
 thparser.code.tex
-\pgfmath@dimen=\dimen172
-\pgfmath@count=\count269
-\pgfmath@box=\box55
+\pgfmath@dimen=\dimen176
+\pgfmath@count=\count276
+\pgfmath@box=\box57
 \pgfmath@toks=\toks24
 \pgfmath@stack@operand=\toks25
 \pgfmath@stack@operation=\toks26
@@ -282,134 +280,137 @@ thfunctions.misc.code.tex)
 thfunctions.integerarithmetics.code.tex)))
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfma
 thfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count270
+\c@pgfmathroundto@lastzeros=\count277
 ))
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfin
 t.code.tex)
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2020/09/28 v3.1.6 (3.1.6)
-\pgf@picminx=\dimen173
-\pgf@picmaxx=\dimen174
-\pgf@picminy=\dimen175
-\pgf@picmaxy=\dimen176
-\pgf@pathminx=\dimen177
-\pgf@pathmaxx=\dimen178
-\pgf@pathminy=\dimen179
-\pgf@pathmaxy=\dimen180
-\pgf@xx=\dimen181
-\pgf@xy=\dimen182
-\pgf@yx=\dimen183
-\pgf@yy=\dimen184
-\pgf@zx=\dimen185
-\pgf@zy=\dimen186
+File: pgfcorepoints.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+\pgf@picminx=\dimen177
+\pgf@picmaxx=\dimen178
+\pgf@picminy=\dimen179
+\pgf@picmaxy=\dimen180
+\pgf@pathminx=\dimen181
+\pgf@pathmaxx=\dimen182
+\pgf@pathminy=\dimen183
+\pgf@pathmaxy=\dimen184
+\pgf@xx=\dimen185
+\pgf@xy=\dimen186
+\pgf@yx=\dimen187
+\pgf@yy=\dimen188
+\pgf@zx=\dimen189
+\pgf@zy=\dimen190
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcorepathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2020/09/28 v3.1.6 (3.1.6)
-\pgf@path@lastx=\dimen187
-\pgf@path@lasty=\dimen188
+File: pgfcorepathconstruct.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+\pgf@path@lastx=\dimen191
+\pgf@path@lasty=\dimen192
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcorepathusage.code.tex
-File: pgfcorepathusage.code.tex 2020/09/28 v3.1.6 (3.1.6)
-\pgf@shorten@end@additional=\dimen189
-\pgf@shorten@start@additional=\dimen190
+File: pgfcorepathusage.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+\pgf@shorten@end@additional=\dimen193
+\pgf@shorten@start@additional=\dimen194
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2020/09/28 v3.1.6 (3.1.6)
-\pgfpic=\box56
-\pgf@hbox=\box57
-\pgf@layerbox@main=\box58
-\pgf@picture@serial@count=\count271
+File: pgfcorescopes.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+\pgfpic=\box58
+\pgf@hbox=\box59
+\pgf@layerbox@main=\box60
+\pgf@picture@serial@count=\count278
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcoregraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2020/09/28 v3.1.6 (3.1.6)
-\pgflinewidth=\dimen191
+File: pgfcoregraphicstate.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+\pgflinewidth=\dimen195
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcoretransformations.code.tex
-File: pgfcoretransformations.code.tex 2020/09/28 v3.1.6 (3.1.6)
-\pgf@pt@x=\dimen192
-\pgf@pt@y=\dimen193
-\pgf@pt@temp=\dimen194
+File: pgfcoretransformations.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+\pgf@pt@x=\dimen196
+\pgf@pt@y=\dimen197
+\pgf@pt@temp=\dimen198
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2020/09/28 v3.1.6 (3.1.6)
+File: pgfcorequick.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcoreobjects.code.tex
-File: pgfcoreobjects.code.tex 2020/09/28 v3.1.6 (3.1.6)
+File: pgfcoreobjects.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcorepathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2020/09/28 v3.1.6 (3.1.6)
+File: pgfcorepathprocessing.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2020/09/28 v3.1.6 (3.1.6)
-\pgfarrowsep=\dimen195
+File: pgfcorearrows.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+\pgfarrowsep=\dimen199
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2020/09/28 v3.1.6 (3.1.6)
-\pgf@max=\dimen196
-\pgf@sys@shading@range@num=\count272
-\pgf@shadingcount=\count273
+File: pgfcoreshade.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+\pgf@max=\dimen256
+\pgf@sys@shading@range@num=\count279
+\pgf@shadingcount=\count280
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2020/09/28 v3.1.6 (3.1.6)
+File: pgfcoreimage.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2020/09/28 v3.1.6 (3.1.6)
-\pgfexternal@startupbox=\box59
+File: pgfcoreexternal.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+\pgfexternal@startupbox=\box61
 ))
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2020/09/28 v3.1.6 (3.1.6)
+File: pgfcorelayers.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcoretransparency.code.tex
-File: pgfcoretransparency.code.tex 2020/09/28 v3.1.6 (3.1.6)
+File: pgfcoretransparency.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2020/09/28 v3.1.6 (3.1.6)
+File: pgfcorepatterns.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer
 /pgfcorerdf.code.tex
-File: pgfcorerdf.code.tex 2020/09/28 v3.1.6 (3.1.6)
+File: pgfcorerdf.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 )))
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/xx
 color.sty
 Package: xxcolor 2003/10/24 ver 0.1
-\XC@nummixins=\count274
-\XC@countmixins=\count275
+\XC@nummixins=\count281
+\XC@countmixins=\count282
 )
-(c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/atbegshi/atbeg
-shi.sty
-Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
-
-(c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/infw
-arerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+(c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atbegshi-lt
+x.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
 )
-(c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmd
-s.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-))
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperre
 f.sty
 Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
 
+(c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmd
+s.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdf
 texcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/infw
+arerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
@@ -441,11 +442,11 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvopti
 ons.sty
-Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen197
-\Hy@linkcounter=\count276
-\Hy@pagecounter=\count277
+\@linkdim=\dimen257
+\Hy@linkcounter=\count283
+\Hy@pagecounter=\count284
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.
 def
@@ -461,7 +462,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 mds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count278
+\Hy@SavedSpaceFactor=\count285
 Package hyperref Info: Option `unicode' set `true' on input line 4338.
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.d
@@ -480,13 +481,13 @@ Package hyperref Info: Plain pages OFF on input line 4479.
 Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
 Package hyperref Info: Bookmarks ON on input line 4717.
-\c@Hy@tempcnt=\count279
+\c@Hy@tempcnt=\count286
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5076.
-\XeTeXLinkMargin=\dimen198
+\XeTeXLinkMargin=\dimen258
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.
 sty
@@ -497,9 +498,9 @@ intcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count280
-\Field@Width=\dimen199
-\Fld@charsize=\dimen256
+\Fld@menulength=\count287
+\Field@Width=\dimen259
+\Fld@charsize=\dimen260
 Package hyperref Info: Hyper figures OFF on input line 6347.
 Package hyperref Info: Link nesting OFF on input line 6352.
 Package hyperref Info: Hyper index ON on input line 6355.
@@ -509,7 +510,7 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6372.
 Package hyperref Info: PDF/A mode OFF on input line 6377.
 LaTeX Info: Redefining \ref on input line 6417.
 LaTeX Info: Redefining \pageref on input line 6421.
-\Hy@abspage=\count281
+\Hy@abspage=\count288
 
 Package hyperref Message: Stopped early.
 
@@ -520,12 +521,14 @@ Package hyperref Info: Driver (autodetected): hpdftex.
 .def
 File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
 
-(c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/atveryend/atvery
-end.sty
-Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+(c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atveryend-l
+tx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
 )
-\Fld@listcount=\count282
-\c@bookmark@seq@number=\count283
+\Fld@listcount=\count289
+\c@bookmark@seq@number=\count290
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/r
 erunfilecheck.sty
@@ -570,36 +573,36 @@ emisc.sty)
 etwoscreens.sty)
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerbas
 eoverlay.sty
-\beamer@argscount=\count284
+\beamer@argscount=\count291
 \beamer@lastskipcover=\skip50
-\beamer@trivlistdepth=\count285
+\beamer@trivlistdepth=\count292
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerbas
 etitle.sty)
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerbas
 esection.sty
-\c@lecture=\count286
-\c@part=\count287
-\c@section=\count288
-\c@subsection=\count289
-\c@subsubsection=\count290
+\c@lecture=\count293
+\c@part=\count294
+\c@section=\count295
+\c@subsection=\count296
+\c@subsubsection=\count297
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerbas
 eframe.sty
-\beamer@framebox=\box60
-\beamer@frametitlebox=\box61
-\beamer@zoombox=\box62
-\beamer@zoomcount=\count291
-\beamer@zoomframecount=\count292
-\beamer@frametextheight=\dimen257
-\c@subsectionslide=\count293
+\beamer@framebox=\box62
+\beamer@frametitlebox=\box63
+\beamer@zoombox=\box64
+\beamer@zoomcount=\count298
+\beamer@zoomframecount=\count299
+\beamer@frametextheight=\dimen261
+\c@subsectionslide=\count300
 \beamer@frametopskip=\skip51
 \beamer@framebottomskip=\skip52
 \beamer@frametopskipautobreak=\skip53
 \beamer@framebottomskipautobreak=\skip54
 \beamer@envbody=\toks28
-\framewidth=\dimen258
-\c@framenumber=\count294
+\framewidth=\dimen262
+\c@framenumber=\count301
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerbas
 everbatim.sty
@@ -607,21 +610,21 @@ everbatim.sty
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerbas
 eframesize.sty
-\beamer@splitbox=\box63
-\beamer@autobreakcount=\count295
-\beamer@autobreaklastheight=\dimen259
+\beamer@splitbox=\box65
+\beamer@autobreakcount=\count302
+\beamer@autobreaklastheight=\dimen263
 \beamer@frametitletoks=\toks29
 \beamer@framesubtitletoks=\toks30
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerbas
 eframecomponents.sty
-\beamer@footins=\box64
+\beamer@footins=\box66
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerbas
 ecolor.sty)
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerbas
 enotes.sty
-\beamer@frameboxcopy=\box65
+\beamer@frameboxcopy=\box67
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerbas
 etoc.sty)
@@ -633,17 +636,17 @@ etemplates.sty
 eauxtemplates.sty
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerbas
 eboxes.sty
-\bmb@box=\box66
-\bmb@colorbox=\box67
-\bmb@boxshadow=\box68
-\bmb@boxshadowball=\box69
-\bmb@boxshadowballlarge=\box70
-\bmb@temp=\dimen260
-\bmb@dima=\dimen261
-\bmb@dimb=\dimen262
-\bmb@prevheight=\dimen263
+\bmb@box=\box68
+\bmb@colorbox=\box69
+\bmb@boxshadow=\box70
+\bmb@boxshadowball=\box71
+\bmb@boxshadowballlarge=\box72
+\bmb@temp=\dimen264
+\bmb@dima=\dimen265
+\bmb@dimb=\dimen266
+\bmb@prevheight=\dimen267
 )
-\beamer@blockheadheight=\dimen264
+\beamer@blockheadheight=\dimen268
 ))
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerbas
 elocalstructure.sty
@@ -652,20 +655,20 @@ sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks32
 )
-\c@figure=\count296
-\c@table=\count297
+\c@figure=\count303
+\c@table=\count304
 \abovecaptionskip=\skip55
 \belowcaptionskip=\skip56
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerbas
 enavigation.sty
-\beamer@section@min@dim=\dimen265
+\beamer@section@min@dim=\dimen269
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerbas
 etheorems.sty
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.
 sty
-Package: amsmath 2020/01/20 v2.17e AMS math features
+Package: amsmath 2020/09/23 v2.17i AMS math features
 \@mathmargin=\skip57
 For additional information on amsmath, use the `?' option.
 
@@ -677,54 +680,54 @@ Package: amstext 2000/06/29 v2.01 AMS text
 ty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks33
-\ex@=\dimen266
+\ex@=\dimen270
 ))
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.s
 ty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen267
+\pmbraise@=\dimen271
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.s
 ty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count298
-LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count299
-\leftroot@=\count300
-LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count301
-\DOTSCASE@=\count302
-LaTeX Info: Redefining \ldots on input line 486.
-LaTeX Info: Redefining \dots on input line 489.
-LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box71
-\strutbox@=\box72
-\big@size=\dimen268
-LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count303
-\c@MaxMatrixCols=\count304
+\inf@bad=\count305
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count306
+\leftroot@=\count307
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count308
+\DOTSCASE@=\count309
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box73
+\strutbox@=\box74
+\big@size=\dimen272
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count310
+\c@MaxMatrixCols=\count311
 \dotsspace@=\muskip17
-\c@parentequation=\count305
-\dspbrk@lvl=\count306
+\c@parentequation=\count312
+\dspbrk@lvl=\count313
 \tag@help=\toks34
-\row@=\count307
-\column@=\count308
-\maxfields@=\count309
+\row@=\count314
+\column@=\count315
+\maxfields@=\count316
 \andhelp@=\toks35
-\eqnshift@=\dimen269
-\alignsep@=\dimen270
-\tagshift@=\dimen271
-\tagwidth@=\dimen272
-\totwidth@=\dimen273
-\lineht@=\dimen274
+\eqnshift@=\dimen273
+\alignsep@=\dimen274
+\tagshift@=\dimen275
+\tagwidth@=\dimen276
+\totwidth@=\dimen277
+\lineht@=\dimen278
 \@envbody=\toks36
 \multlinegap=\skip58
 \multlinetaggap=\skip59
 \mathdisplay@stack=\toks37
-LaTeX Info: Redefining \[ on input line 2859.
-LaTeX Info: Redefining \] on input line 2860.
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amscls/amsthm.st
 y
@@ -739,7 +742,7 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headsep=\skip62
 \dth@everypar=\toks43
 )
-\c@theorem=\count310
+\c@theorem=\count317
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerbas
 ethemes.sty))
@@ -751,8 +754,8 @@ tthemedefault.sty)
 orthemedefault.sty)
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerinn
 erthemedefault.sty
-\beamer@dima=\dimen275
-\beamer@dimb=\dimen276
+\beamer@dima=\dimen279
+\beamer@dimb=\dimen280
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerout
 erthemedefault.sty)))
@@ -761,26 +764,26 @@ fpages.sty
 Package: pgfpages 2011/01/05 ver 0.02
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count311
-\calc@Bcount=\count312
-\calc@Adimen=\dimen277
-\calc@Bdimen=\dimen278
+\calc@Acount=\count318
+\calc@Bcount=\count319
+\calc@Adimen=\dimen281
+\calc@Bdimen=\dimen282
 \calc@Askip=\skip63
 \calc@Bskip=\skip64
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count313
+\calc@Ccount=\count320
 \calc@Cskip=\skip65
 )
-\pgf@logicalpages=\count314
-\pgf@firstshipout=\count315
-\pgf@lastshipout=\count316
-\pgf@currentshipout=\count317
-\pgf@cpn=\count318
-\pgf@shipoutnextto=\count319
-\pgfphysicalheight=\dimen279
-\pgfphysicalwidth=\dimen280
-\pgfpages@shipoutbox=\box73
+\pgf@logicalpages=\count321
+\pgf@firstshipout=\count322
+\pgf@lastshipout=\count323
+\pgf@currentshipout=\count324
+\pgf@cpn=\count325
+\pgf@shipoutnextto=\count326
+\pgfphysicalheight=\dimen283
+\pgfphysicalwidth=\dimen284
+\pgfpages@shipoutbox=\box75
 ) (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -825,7 +828,7 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
 12.
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmss.fd
@@ -833,7 +836,7 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/inputenc.st
 y
-Package: inputenc 2018/08/11 v1.3c Input encoding file
+Package: inputenc 2020/08/01 v1.3d Input encoding file
 \inpenc@prehook=\toks44
 \inpenc@posthook=\toks45
 )
@@ -858,8 +861,8 @@ tthemestructurebold.sty)
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3back
 end-pdftex.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count320
-\l__pdf_internal_box=\box74
+\l__kernel_color_stack_int=\count327
+\l__pdf_internal_box=\box76
 ) (./slide_tese.aux
 
 LaTeX Warning: Label `' multiply defined.
@@ -933,8 +936,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 opdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
-)) ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box75
+))
 Package hyperref Info: Link coloring OFF on input line 113.
 
 (c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref
@@ -949,7 +951,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 /gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count321
+\c@section@level=\count328
 )
 LaTeX Info: Redefining \ref on input line 113.
 LaTeX Info: Redefining \pageref on input line 113.
@@ -1258,7 +1260,7 @@ Overfull \hbox (216.87344pt too wide) has occurred while \output is active
 
 ]
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 362.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 360.
 
 
 Overfull \hbox (89.44028pt too wide) has occurred while \output is active
@@ -1310,7 +1312,7 @@ Overfull \hbox (216.87344pt too wide) has occurred while \output is active
 
 ]
 
-Package hyperref Warning: Ignoring empty anchor on input line 451.
+Package hyperref Warning: Ignoring empty anchor on input line 449.
 
 
 Overfull \hbox (89.44028pt too wide) has occurred while \output is active
@@ -1326,7 +1328,7 @@ Overfull \hbox (216.87344pt too wide) has occurred while \output is active
 
 ]
 
-Package hyperref Warning: Ignoring empty anchor on input line 471.
+Package hyperref Warning: Ignoring empty anchor on input line 469.
 
 
 Overfull \hbox (89.44028pt too wide) has occurred while \output is active
@@ -1344,10 +1346,10 @@ Overfull \hbox (216.87344pt too wide) has occurred while \output is active
 <synth.png, id=168, 970.3753pt x 548.0475pt>
 File: synth.png Graphic file (type png)
 <use synth.png>
-Package pdftex.def Info: synth.png  used on input line 480.
+Package pdftex.def Info: synth.png  used on input line 478.
 (pdftex.def)             Requested size: 342.30165pt x 193.32475pt.
 
-Overfull \vbox (15.26938pt too high) detected at line 480
+Overfull \vbox (15.26938pt too high) detected at line 478
  []
 
 
@@ -1366,7 +1368,7 @@ Overfull \hbox (216.87344pt too wide) has occurred while \output is active
 <gap.png, id=177, 825.0825pt x 429.10312pt>
 File: gap.png Graphic file (type png)
 <use gap.png>
-Package pdftex.def Info: gap.png  used on input line 489.
+Package pdftex.def Info: gap.png  used on input line 487.
 (pdftex.def)             Requested size: 342.30214pt x 178.0221pt.
 
 Overfull \hbox (89.44028pt too wide) has occurred while \output is active
@@ -1384,10 +1386,10 @@ Overfull \hbox (216.87344pt too wide) has occurred while \output is active
 <p.png, id=187, 426.6339pt x 284.5029pt>
 File: p.png Graphic file (type png)
 <use p.png>
-Package pdftex.def Info: p.png  used on input line 498.
+Package pdftex.def Info: p.png  used on input line 496.
 (pdftex.def)             Requested size: 342.29707pt x 228.26248pt.
 
-Overfull \vbox (50.2071pt too high) detected at line 498
+Overfull \vbox (50.2071pt too high) detected at line 496
  []
 
 
@@ -1418,10 +1420,10 @@ Overfull \hbox (216.87344pt too wide) has occurred while \output is active
 <rsme.png, id=204, 426.6339pt x 284.5029pt>
 File: rsme.png Graphic file (type png)
 <use rsme.png>
-Package pdftex.def Info: rsme.png  used on input line 520.
+Package pdftex.def Info: rsme.png  used on input line 518.
 (pdftex.def)             Requested size: 342.29707pt x 228.26248pt.
 
-Overfull \vbox (50.2071pt too high) detected at line 520
+Overfull \vbox (50.2071pt too high) detected at line 518
  []
 
 
@@ -1438,10 +1440,10 @@ Overfull \hbox (216.87344pt too wide) has occurred while \output is active
 
  <./rsme.png>]
 
-Package hyperref Warning: Ignoring empty anchor on input line 574.
+Package hyperref Warning: Ignoring empty anchor on input line 572.
 
 
-Overfull \vbox (6.72487pt too high) detected at line 574
+Overfull \vbox (6.72487pt too high) detected at line 572
  []
 
 
@@ -1469,6 +1471,30 @@ Overfull \hbox (216.87344pt too wide) has occurred while \output is active
 [24
 
 ]
+Overfull \hbox (89.44028pt too wide) has occurred while \output is active
+ [][]  \T1/lmss/bx/n/6 ([])  
+ []
+
+
+Overfull \hbox (216.87344pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[25
+
+]
+Overfull \hbox (89.44028pt too wide) has occurred while \output is active
+ [][]  \T1/lmss/bx/n/6 ([])  
+ []
+
+
+Overfull \hbox (216.87344pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[26
+
+]
 \tf@nav=\write6
 \openout6 = `slide_tese.nav'.
 
@@ -1478,11 +1504,7 @@ Overfull \hbox (216.87344pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `slide_tese.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 591.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 591.
 (./slide_tese.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 591.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 591.
 Package rerunfilecheck Info: File `slide_tese.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1490,13 +1512,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 21527 strings out of 482823
- 403420 string characters out of 5954258
- 629972 words of memory out of 5000000
- 36319 multiletter control sequences out of 15000+600000
+ 21535 strings out of 481466
+ 405300 string characters out of 5920003
+ 680737 words of memory out of 5000000
+ 37681 multiletter control sequences out of 15000+600000
  629178 words of font info for 88 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 59i,15n,63p,798b,684s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 107i,15n,111p,435b,688s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ma
 thit.enc}{c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/l
 m/lm-ec.enc}{c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvip
@@ -1518,10 +1540,10 @@ ype1/public/lm/lmsso8.pfb><c:/Users/Samsung/AppData/Roaming/TinyTeX/texmf-dist/
 fonts/type1/public/lm/lmsy10.pfb><c:/Users/Samsung/AppData/Roaming/TinyTeX/texm
 f-dist/fonts/type1/public/lm/lmsy6.pfb><c:/Users/Samsung/AppData/Roaming/TinyTe
 X/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on slide_tese.pdf (24 pages, 398723 bytes).
+Output written on slide_tese.pdf (26 pages, 401236 bytes).
 PDF statistics:
- 297 PDF objects out of 1000 (max. 8388607)
- 234 compressed objects within 3 object streams
- 76 named destinations out of 1000 (max. 500000)
+ 313 PDF objects out of 1000 (max. 8388607)
+ 248 compressed objects within 3 object streams
+ 82 named destinations out of 1000 (max. 500000)
  105 words of extra memory for PDF output out of 10000 (max. 10000000)
 

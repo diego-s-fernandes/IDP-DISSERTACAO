@@ -135,9 +135,8 @@ $V_{k\mathrm{ \times }k}$ matriz simétrica semidefinida que tem função de atr
 
 ## 3. Metodologia
 
-1.  Orientado a dados
 
-2.  Uma vez definido a variável de interesse e a unidade de tratamento:
+1.  Uma vez definido a variável de interesse e a unidade de tratamento:
 
     -   Delimitação do *donor pool* e das variáveis
     -   Base de dados
@@ -151,8 +150,8 @@ $V_{k\mathrm{ \times }k}$ matriz simétrica semidefinida que tem função de atr
 
 -   Data da Intervenção
 
-    -   A Lei 12.529/2011 com efeitos em 2012
-    -   O ano 2011 escolhido como intervenção
+    -   A Lei 12.529/2011 
+    -   O ano 2011 escolhido como intervenção (teste 2012)
 
 ## 3.2 Base de dados - *Donor pool*
 
@@ -315,7 +314,15 @@ F Statistic & 10.28$^{***}$ (df = 3; 224) & 15.58$^{***}$ (df = 8; 219) \\
 }
 \end{table}
 ```
+## Testes Adicionais
+O Apêndice A, foram realizado os mesmos procedimentos acima com as mesmas unidades de comparação, porém com as covariadas defasadas. Apêndice B apresenta uma variação temporal, com as data de intervenção datada para o ano de 2012, mantendo-se as unidades de comparações originais. Verifica-se, tanto no Apêndice A como no Apêndice B, que o efeito é similar ao que foi apresentado ao longo deste trabalho.
+
+## Testes Adicionais
+
+Em relação ao Apêndice C e D, modificou-se o “donor pool”. No Apêndice C, foi inserido o rol de países emergentes. Neste novo desenho, embora ainda se tenha um Gap após a intervenção, o RSMPE parece ser inconclusivo, na medida em que o Brasil apresenta um resultado menor que outros dois países. No apêndice D, retirou-se do “donor pool” o país com um maior peso na unidade sintética (Argentina) e efetuou-se o mesmo exercício. Neste ultimo exercício, tanto o ajustamento quanto o resultado final não teve um resultado conclusivo
+
 ## Conclusão
+
 
 <p style="text-align: justify;">
 

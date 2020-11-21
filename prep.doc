@@ -1,8 +1,8 @@
 
 <table style="text-align:center"><tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td>Treated</td><td>Synthetic</td><td>Sample Mean</td></tr>
-<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">gdp_per_capita_constant_2010_us</td><td>9,892.231</td><td>9,352.294</td><td>6,677.430</td></tr>
-<tr><td style="text-align:left">gdp_growth_annual_percent</td><td>3.786</td><td>3.755</td><td>4.433</td></tr>
-<tr><td style="text-align:left">foreign_direct_investment_net_inflows_percent_of_gdp</td><td>3.015</td><td>3.021</td><td>3.278</td></tr>
-<tr><td style="text-align:left">final_consumption_expenditure_annual_percent_growth</td><td>3.663</td><td>4.361</td><td>4.501</td></tr>
-<tr><td style="text-align:left">index_ef</td><td>59.458</td><td>59.792</td><td>61.937</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">gdp_per_capita_constant_2010_us</td><td>9.180</td><td>9.128</td><td>8.597</td></tr>
+<tr><td style="text-align:left">gdp_growth_annual_percent</td><td>3.769</td><td>2.733</td><td>4.436</td></tr>
+<tr><td style="text-align:left">foreign_direct_investment_net_inflows_percent_of_gdp</td><td>2.933</td><td>2.937</td><td>3.344</td></tr>
+<tr><td style="text-align:left">final_consumption_expenditure_annual_percent_growth</td><td>3.615</td><td>3.296</td><td>4.413</td></tr>
+<tr><td style="text-align:left">index_ef</td><td>59.745</td><td>62.309</td><td>62.395</td></tr>
 <tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr></table>

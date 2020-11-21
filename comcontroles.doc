@@ -3,37 +3,37 @@
 <tr><td></td><td colspan="2" style="border-bottom: 1px solid black"></td></tr>
 <tr><td style="text-align:left"></td><td colspan="2">number</td></tr>
 <tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td></tr>
-<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">gdp_per_capita_constant_2010_us</td><td>0.003<sup>**</sup></td><td></td></tr>
-<tr><td style="text-align:left"></td><td>(0.001)</td><td></td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">gdp_per_capita_constant_2010_us</td><td>31.930<sup>***</sup></td><td></td></tr>
+<tr><td style="text-align:left"></td><td>(6.940)</td><td></td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td style="text-align:left">gdp_growth_annual_percent</td><td>4.811<sup>**</sup></td><td></td></tr>
-<tr><td style="text-align:left"></td><td>(2.304)</td><td></td></tr>
+<tr><td style="text-align:left">gdp_growth_annual_percent</td><td>5.480<sup>**</sup></td><td></td></tr>
+<tr><td style="text-align:left"></td><td>(2.302)</td><td></td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td style="text-align:left">foreign_direct_investment_net_inflows_percent_of_gdp</td><td>3.673<sup>*</sup></td><td></td></tr>
-<tr><td style="text-align:left"></td><td>(1.914)</td><td></td></tr>
+<tr><td style="text-align:left">foreign_direct_investment_net_inflows_percent_of_gdp</td><td>4.870<sup>***</sup></td><td></td></tr>
+<tr><td style="text-align:left"></td><td>(1.835)</td><td></td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td style="text-align:left">final_consumption_expenditure_annual_percent_growth</td><td>-0.761</td><td></td></tr>
-<tr><td style="text-align:left"></td><td>(2.268)</td><td></td></tr>
+<tr><td style="text-align:left">final_consumption_expenditure_annual_percent_growth</td><td>-2.206</td><td></td></tr>
+<tr><td style="text-align:left"></td><td>(2.269)</td><td></td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td style="text-align:left">index_ef</td><td>-3.499<sup>***</sup></td><td></td></tr>
-<tr><td style="text-align:left"></td><td>(0.519)</td><td></td></tr>
+<tr><td style="text-align:left">index_ef</td><td>-3.642<sup>***</sup></td><td></td></tr>
+<tr><td style="text-align:left"></td><td>(0.508)</td><td></td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td style="text-align:left">trat</td><td>18.789</td><td>29.659</td></tr>
-<tr><td style="text-align:left"></td><td>(16.875)</td><td>(18.721)</td></tr>
+<tr><td style="text-align:left">trat</td><td>12.236</td><td>34.455<sup>*</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(16.298)</td><td>(18.260)</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td style="text-align:left">time</td><td>-0.145</td><td>1.195</td></tr>
-<tr><td style="text-align:left"></td><td>(7.326)</td><td>(8.002)</td></tr>
+<tr><td style="text-align:left">time</td><td>-8.043</td><td>-1.670</td></tr>
+<tr><td style="text-align:left"></td><td>(7.351)</td><td>(8.124)</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td style="text-align:left">did</td><td>66.957<sup>***</sup></td><td>73.737<sup>**</sup></td></tr>
-<tr><td style="text-align:left"></td><td>(25.530)</td><td>(28.851)</td></tr>
+<tr><td style="text-align:left">did</td><td>71.247<sup>***</sup></td><td>76.602<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(24.635)</td><td>(28.141)</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Constant</td><td>215.178<sup>***</sup></td><td>47.159<sup>***</sup></td></tr>
-<tr><td style="text-align:left"></td><td>(29.875)</td><td>(5.192)</td></tr>
+<tr><td style="text-align:left">Constant</td><td>-37.927</td><td>42.364<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(58.743)</td><td>(5.271)</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>247</td><td>247</td></tr>
-<tr><td style="text-align:left">R<sup>2</sup></td><td>0.329</td><td>0.095</td></tr>
-<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.306</td><td>0.084</td></tr>
-<tr><td style="text-align:left">Residual Std. Error</td><td>51.906 (df = 238)</td><td>59.654 (df = 243)</td></tr>
-<tr><td style="text-align:left">F Statistic</td><td>14.580<sup>***</sup> (df = 8; 238)</td><td>8.497<sup>***</sup> (df = 3; 243)</td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>228</td><td>228</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.363</td><td>0.121</td></tr>
+<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.339</td><td>0.109</td></tr>
+<tr><td style="text-align:left">Residual Std. Error</td><td>49.930 (df = 219)</td><td>57.984 (df = 224)</td></tr>
+<tr><td style="text-align:left">F Statistic</td><td>15.583<sup>***</sup> (df = 8; 219)</td><td>10.276<sup>***</sup> (df = 3; 224)</td></tr>
 <tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="2" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
 </table>
