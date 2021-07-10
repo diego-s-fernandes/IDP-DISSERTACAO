@@ -1,0 +1,37 @@
+---
+title: "placebo ajustado"
+author: "Diego dos Santos Fernandes"
+date: "04/08/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+```
+
+
+
+```{r cars}
+placebo_ajustado <- readxl::read_xlsx("placebo_ajustado.xlsx")
+
+placebo_ajustado <- placebo_ajustado %>% 
+  select(!...12)
+```
+
+```{r}
+
+ 
+int <- placebo_ajustado$region_economy %>% unique() %>% sort()
+
+int <- data.frame(int, seq_along(int) %>% as.factor())
+  
+int <- int %>% rename(regio = seq_along.int......as.factor.., region_economy = int)
+
+placebo_super_ajustado <- full_join(placebo_ajustado,int, by = c("region_economy"))
+```
+
+```{r}
+write.csv(placebo_super_ajustado, "placebos_rodar.csv")
+
+```
+

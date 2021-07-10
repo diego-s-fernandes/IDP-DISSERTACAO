@@ -1,0 +1,197 @@
+---
+title: "Tratamento dos dados"
+author: "Diego dos Santos Fernandes"
+date: "31/05/2020"
+output:
+  pdf_document: default
+  html_document: default
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(janitor)
+library(wbstats)
+library(StandardizeText)
+library(httr)
+library(jsonlite)
+library(rjstat)
+library(StandardizeText)
+library(countrycode)
+```
+
+```{r}
+options(scipen = 999)
+```
+
+
+```{r}
+
+data(country.regex)
+
+
+```
+
+
+
+```{r}
+# limpando os dados da UNCTAD
+# importanto os dados
+
+library(readxl)
+MA_20 <- read_excel("WIR2020Tab07.xlsx", 
+    skip = 2)
+
+MA <- MA_20[-c(234:242),]
+
+MA$`Region/economy` <- countrycode(MA$`Region/economy`, origin = 'country.name', destination = 'cldr.name.en')
+MA <- MA %>% 
+  drop_na(`Region/economy`)
+
+# Verificar o nome dos países
+
+```
+
+
+ 
+```{r}
+# faxinando os dados
+
+
+MA <- MA %>% 
+  na.omit() %>% 
+   pivot_longer(-`Region/economy`, names_to = "Ano", values_to = "number") 
+
+MA <- MA %>%
+  clean_names() %>%
+  mutate(ano = as.numeric(ano))
+
+
+
+```
+
+```{r}
+library(readr)
+tudo <-
+  read_csv(
+    "tudo.csv",
+    col_types = cols(
+      Combined.polity.score = col_skip(),
+      Enforcing.contracts..Enforcement.of.judgment..days. = col_skip(),
+      Gross.fixed.capital.formation..private.sector....of.GDP. = col_skip(),
+      Income.poverty = col_skip(),
+      Real.effective.exchange.rate.index..2010...100. = col_skip(),
+      Regulatory.Quality..estimate. = col_skip(),
+      Rule.of.Law..Estimate = col_skip(),
+      Starting.a.business...Score = col_skip(),
+      X1 = col_skip(),
+      Youth..In.School..15.18. = col_skip()
+    )
+  )
+
+```
+
+
+
+```{r}
+tudo <- as.data.frame(tudo)
+
+
+
+tudo <- tudo %>%
+  mutate(Year = as.numeric(Year))
+
+completo <-
+  left_join(MA, tudo, by = c("ano" = "Year", "region_economy" = "Country")) %>%
+  clean_names()
+
+
+```
+
+
+```{r}
+
+brasil <- completo %>% 
+  filter(region_economy == "Brazil", ano %in% c(1995:2019))
+```
+
+```{r}
+
+
+
+
+```
+
+
+
+```{r}
+#juntando com os dados de economic fredom
+ef <- read_csv("ef.csv") %>%
+  rename(index_ef = `Overall Score`)
+
+ef$Name <- countrycode(ef$Name, origin = 'country.name', destination = 'cldr.name.en')
+
+
+index <- ef %>% 
+  select(Name,`Index Year`, index_ef)
+
+placebo_total <-
+  left_join(completo,
+            index,
+            by = c("ano" = "Index Year", "region_economy" = "Name")) %>%
+  clean_names()
+
+
+
+
+```
+
+
+ 
+```{r}
+placebos_colunas <- placebo_total %>%
+  filter(ano %in% c(2000:2019)) %>%
+  select(
+    region_economy,
+    ano,
+    number,
+    gdp_per_capita_constant_2010_us,
+    gdp_growth_annual,
+    foreign_direct_investment_net_inflows_of_gdp,
+    final_consumption_expenditure_annual_growth,
+    final_consumption_expenditure_of_gdp,
+    index_ef
+  )
+
+
+```
+
+```{r}
+#identificação de cada país
+
+int <- placebos_colunas$region_economy %>% unique() %>% sort()
+
+int <- data.frame(int, seq_along(int) %>% as.factor())
+  
+int <- int %>% rename(regio = seq_along.int......as.factor.., region_economy = int)
+
+placebo_rodar_ultimo <- full_join(placebos_colunas,int, by = c("region_economy"))
+
+placebo_rodar_ultimo[ placebo_rodar_ultimo == "-" ] <- NA
+
+
+```
+ 
+ 
+ 
+ 
+```{r}
+write_csv(placebo_rodar_ultimo,"placebo_rodar_ultimo.csv")
+
+
+
+```
+ 
+ 

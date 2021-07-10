@@ -1,0 +1,177 @@
+---
+title: "usando api"
+author: "Diego dos Santos Fernandes"
+date: "09/06/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+library(jsonlite)
+library (tidyverse)
+library(pacman)
+library(httr)
+library(rjstat)
+```
+
+
+
+
+```{r eval=FALSE, include=FALSE}
+url <- "https://api.worldbank.org/v2/country/chn;ago/indicator/AG.AGR.TRAC.NO;SP.POP.TOTL?source=2"
+
+
+
+
+```
+
+```{r}
+nomes <- list("NY.GDP.PCAP.CD", "NY.GDP.PCAP.KD", "NY.GDP.MKTP.KD.ZG", "FR.INR.RINR","IC.REG.STRT.BUS.DFRN","RL.EST", "BX.KLT.DINV.WD.GD.ZS","GV.REGL.LA.ES", "CC.EST", "5.51.01.10.gdp", "GFDD.OM.02", "SL.GDP.PCAP.EM.KD.ZG", "SL.GDP.PCAP.EM.KD", "NY.GDP.PCAP.PP.KD.ZG", "NY.GDP.PCAP.KD.ZG", "NY.GDP.MKTP.CD.XD", "NY.GDP.MKTP.CD", "NY.GDP.DEFL.ZS", "NY.GDP.DEFL.KD.ZG.AD", "NY.GDP.DEFL.KD.ZG", "BM.KLT.DINV.WD.GD.ZS", "BN.KLT.PRVT.GD.ZS", "GV.TI.SCOR.IDX","3.0.Gini", "NE.GDI.FPUB.ZS", "5.51.01.01.poverty", "NE.GDI.FPUB.ZS", "NE.DAB.TOTL.KD", "NE.CON.TOTL.KD.ZG", "NE.CON.TOTL.ZS", "4.0.stud.15a18", "NE.GDI.FPRV.ZS", "UPP.COM.POL.XQ", "IC.REG.STRT.BUS.DFRN", "PX.REX.REER", "ENF.CONT.COEN.ENJU.DY")
+```
+
+
+```{r}
+
+
+indicador <-list("NY.GDP.PCAP.CD", "NY.GDP.PCAP.KD", "NY.GDP.MKTP.KD.ZG", "FR.INR.RINR","IC.REG.STRT.BUS.DFRN","RL.EST", "BX.KLT.DINV.WD.GD.ZS","GV.REGL.LA.ES", "CC.EST", "5.51.01.10.gdp", "GFDD.OM.02", "SL.GDP.PCAP.EM.KD.ZG", "SL.GDP.PCAP.EM.KD", "NY.GDP.PCAP.PP.KD.ZG", "NY.GDP.PCAP.KD.ZG", "NY.GDP.MKTP.CD.XD", "NY.GDP.MKTP.CD", "NY.GDP.DEFL.ZS", "NY.GDP.DEFL.KD.ZG.AD", "NY.GDP.DEFL.KD.ZG", "BM.KLT.DINV.WD.GD.ZS", "BN.KLT.PRVT.GD.ZS", "GV.TI.SCOR.IDX","3.0.Gini", "NE.GDI.FPUB.ZS", "5.51.01.01.poverty", "NE.GDI.FPUB.ZS", "NE.DAB.TOTL.KD", "NE.CON.TOTL.KD.ZG", "NE.CON.TOTL.ZS", "4.0.stud.15a18", "NE.GDI.FPRV.ZS", "UPP.COM.POL.XQ", "IC.REG.STRT.BUS.DFRN", "PX.REX.REER", "ENF.CONT.COEN.ENJU.DY")
+
+```
+
+```{r}
+indicador <-list("NY.GDP.PCAP.CD", "NY.GDP.PCAP.KD", "NY.GDP.MKTP.KD.ZG", "FR.INR.RINR","IC.REG.STRT.BUS.DFRN","RL.EST", "BX.KLT.DINV.WD.GD.ZS","GV.REGL.LA.ES", "CC.EST", "5.51.01.10.gdp", "GFDD.OM.02", "SL.GDP.PCAP.EM.KD.ZG", "SL.GDP.PCAP.EM.KD", "NY.GDP.PCAP.PP.KD.ZG", "NY.GDP.PCAP.KD.ZG", "NY.GDP.MKTP.CD.XD", "NY.GDP.MKTP.CD", "NY.GDP.DEFL.ZS", "NY.GDP.DEFL.KD.ZG.AD", "NY.GDP.DEFL.KD.ZG", "BM.KLT.DINV.WD.GD.ZS", "BN.KLT.PRVT.GD.ZS", "GV.TI.SCOR.IDX","3.0.Gini", "NE.GDI.FPUB.ZS", "5.51.01.01.poverty", "NE.GDI.FPUB.ZS", "NE.DAB.TOTL.KD", "NE.CON.TOTL.KD.ZG", "NE.CON.TOTL.ZS", "4.0.stud.15a18", "NE.GDI.FPRV.ZS", "UPP.COM.POL.XQ", "IC.REG.STRT.BUS.DFRN", "PX.REX.REER", "ENF.CONT.COEN.ENJU.DY")
+
+out <- vector("list", length(indicador))
+
+for (i in 1:length(indicador)){
+ out[[i]] <- paste0("https://api.worldbank.org/v2/country/all/indicator/",indicador[[i]],"?format=jsonstat") 
+
+}
+
+
+tabelas <- map(out, fromJSONstat) # baixou os dados, gerando uma lista de dataframe com cada indicador
+
+tabela_final <- map_df(tabelas, ~bind_rows(.x)) # um dataframe como output juntando todas as linhas
+
+                       
+                       
+```
+
+
+```{r eval=FALSE, include=FALSE}
+# usando for loop
+
+out <- vector("list", length(indicador))
+
+for (i in 1:length(indicador)){
+ out[[i]] <- paste0("https://api.worldbank.org/v2/country/all/indicator/",indicador[[i]],"?format=jsonstat") 
+
+
+}
+
+tabelas <- vector("list", length(out))
+
+for (i in 1:length(out)){
+  tabelas[[i]] <- fromJSONstat(out[[i]])
+  
+}
+
+# aqui não teve jeito. Foi a única mandeira que arrumei de fazer
+for (i in 1:length(tabelas)){
+names(tabelas[[i]]) <- nomes[[i]]
+}
+
+  
+# save(tabelas, file="tabelas.RData")
+ #save(tabelas, file="tabelas.RDS")
+  
+#load("fname.RData")
+#read("tabelas.RDS")
+
+```
+
+
+```{r}
+
+
+#teste <- vector("list",length(tabelas))
+#rm(teste)
+tabela_final <- map_df(tabelas, ~bind_rows(.x) ) %>% 
+  pivot_wider(names_from = Series, values_from = value)
+
+
+
+```
+
+```{r}
+
+```
+
+
+```{r}
+
+tabela2 <- tabelas
+
+gdp <- tabela2[[1]][["NY.GDP.PCAP.CD"]] %>% 
+  pivot_wider(names_from = Series, values_from = value)
+ 
+gdp_pc_2010 <- tabelas[[2]][["NY.GDP.PCAP.KD"]] %>% 
+  pivot_wider(names_from = Series, values_from = value)
+
+growth_gdp_anual <- tabelas[[3]][["NY.GDP.MKTP.KD.ZG"]] %>% pivot_wider(names_from = Series, values_from = value)
+
+real_interest <- tabelas[[4]][["FR.INR.RINR"]] %>% pivot_wider(names_from = Series, values_from = value)
+
+sb <- tabelas[[5]][["IC.REG.STRT.BUS.DFRN"]] %>% pivot_wider(names_from = Series, values_from = value)
+rl <- tabelas[[6]][["RL.EST"]] %>% pivot_wider(names_from = Series, values_from = value)
+
+fdi_gdp <- tabelas[[7]][["BX.KLT.DINV.WD.GD.ZS"]] %>% pivot_wider(names_from = Series, values_from = value)
+
+corruption <- tabelas[[9]][["CC.EST"]]  %>% pivot_wider(names_from = Series, values_from = value)
+pc_gdp_g <- tabelas[[10]][["5.51.01.10.gdp"]]  %>% pivot_wider(names_from = Series, values_from = value)
+
+a <-  tabelas[[15]][["NY.GDP.PCAP.KD.ZG"]] %>% pivot_wider(names_from = Series, values_from = value)
+b <- tabelas[[19]][["NY.GDP.DEFL.KD.ZG.AD"]] %>% pivot_wider(names_from = Series, values_from = value)
+c <- tabelas[[21]][["BM.KLT.DINV.WD.GD.ZS"]] %>% pivot_wider(names_from = Series, values_from = value)
+d <-tabelas[[24]][["3.0.Gini"]] %>% pivot_wider(names_from = Series, values_from = value)
+e <- tabelas[[26]][["5.51.01.01.poverty"]] %>% pivot_wider(names_from = Series, values_from = value)
+f <- tabelas[[29]][["NE.CON.TOTL.KD.ZG"]] %>% pivot_wider(names_from = Series, values_from = value)
+g <- tabelas[[30]][["NE.CON.TOTL.ZS"]] %>% pivot_wider(names_from = Series, values_from = value)
+h <- tabelas[[36]][["ENF.CONT.COEN.ENJU.DY"]] %>% pivot_wider(names_from = Series, values_from = value)
+io <- tabelas[[35]][["PX.REX.REER"]] %>% pivot_wider(names_from = Series, values_from = value)
+j <- tabelas[[34]][["IC.REG.STRT.BUS.DFRN"]]  %>% pivot_wider(names_from = Series, values_from = value)
+k <- tabelas[[32]][["NE.GDI.FPRV.ZS"]] %>% pivot_wider(names_from = Series, values_from = value)
+l <- tabelas[[31]][["4.0.stud.15a18"]] %>% pivot_wider(names_from = Series, values_from = value)
+
+
+```
+
+
+```{r}
+
+tudo <- gdp %>% 
+  full_join(gdp_pc_2010) %>% 
+  full_join(growth_gdp_anual) %>% 
+  full_join(gdp_pc_2010 ) %>% 
+  full_join(real_interest) %>% 
+  full_join(sb) %>% 
+  full_join(rl) %>% 
+  full_join(fdi_gdp) %>% 
+  full_join(corruption) %>% 
+  full_join(pc_gdp_g) %>%  
+  full_join(a) %>% 
+  full_join(b) %>% 
+  full_join(c) %>%  
+  full_join(d) %>% 
+  full_join(e) %>% 
+  full_join(f) %>% 
+  full_join(g) %>% 
+  full_join(h) %>% 
+  full_join(io) %>% 
+  full_join(k) %>% 
+  full_join(j) %>% 
+  full_join(k) %>%
+  full_join(l) 
+
+#write_csv(tudo, "tudo.csv")
+```
+

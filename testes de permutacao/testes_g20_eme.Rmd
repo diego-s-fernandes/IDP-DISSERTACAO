@@ -1,0 +1,326 @@
+---
+title: "placebos rodas"
+author: "Diego dos Santos Fernandes"
+date: "05/08/2020"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(Synth)
+library(readr)
+library(SCtools)
+library(janitor)
+library(stargazer)
+library(broom)
+library(tidyverse)
+library(gsynth)
+library(panelView)
+library(sjPlot)
+library(texreg)
+#library(ggthemr)
+library(gt)
+library(kableExtra)
+
+
+```
+
+
+
+
+
+```{r echo=TRUE}
+library(readr)
+placebos_rodar <- read_csv("placebo_rodar_ultimo.csv")
+
+
+ filtropa <- c("South Africa", "Egypt", "Nigeria", "Tanzania", "Zimbabwe", "China", "Philippines", "India", "Indonesia", "Pakistan", "Thailand", "Argentina", "Bolivia", "Brazil", "Chile", "Ecuador", "Guatemala", "Mexico", "Paraguay", "Peru" , "Uruguay", "Venezuela")
+
+#filtropa <- c("South Africa", "Egypt", "Nigeria", "Tanzania", "Zimbabwe", "China", "Philippines", "India", "Indonesia", "Pakistan", "Thailand", "Bolivia", "Brazil", "Chile", "Ecuador", "Guatemala", "Mexico", "Paraguay", "Peru" , "Uruguay", "Venezuela")
+
+placebos_rodar <- placebos_rodar %>%
+  clean_names() %>% 
+  mutate(index_ef = as.numeric(index_ef)) %>% 
+  filter(ano %in% c(2000:2018), region_economy %in% filtropa) %>% 
+   mutate(gdp_per_capita_constant_2010_us = lag(gdp_per_capita_constant_2010_us), gdp_growth_annual =        lag(gdp_growth_annual), foreign_direct_investment_net_inflows_of_gdp =                                   lag(foreign_direct_investment_net_inflows_of_gdp), final_consumption_expenditure_annual_growth =         lag(final_consumption_expenditure_annual_growth),index_ef = lag(index_ef))
+```
+
+```{r}
+# criando um funão para imputar a média
+
+impute.mean <- function(x) replace(x, is.na(x), mean(x, na.rm = TRUE))
+
+placebos_rodar <- placebos_rodar %>%
+    group_by(region_economy) %>%
+    mutate(
+        numero = impute.mean(number),
+         
+    )
+```
+
+```{r echo=TRUE}
+int <- placebos_rodar$region_economy %>% unique() %>% sort()
+
+int <- data.frame(int, seq_along(int) %>% as.factor())
+  
+int <- int %>% rename(reor = seq_along.int......as.factor.., region_economy = int)
+
+placebos_rodar <- full_join(placebos_rodar,int, by = c("region_economy"))  
+
+colnames(placebos_rodar)
+
+
+placebos_rodar <- placebos_rodar %>% 
+  mutate(reor = as.numeric(reor))
+```
+
+```{r}
+dataprep.out <-
+              dataprep(foo = as.data.frame(placebos_rodar),
+                       predictors = c("gdp_per_capita_constant_2010_us",
+                                      "gdp_growth_annual",
+                                      "foreign_direct_investment_net_inflows_of_gdp",                                                           "final_consumption_expenditure_annual_growth",
+                                      "index_ef") ,
+                      special.predictors =list( list("final_consumption_expenditure_annual_growth",seq(2003,2011,2),c("mean"))),
+                       
+                       predictors.op = "mean" ,
+                       time.predictors.prior = c(2000:2010) ,
+                       dependent = "numero",
+                       unit.variable = "reor",
+                       unit.names.variable = "region_economy" ,
+                       time.variable = "ano",
+                       treatment.identifier = 3,
+                       controls.identifier = c(1,2, 4:22),
+                       time.optimize.ssr = c(2001:2010),
+                       time.plot = 2000:2018
+                       )
+
+#155, 194, 195,35, 91, 66, 82, 30, 132, 160, 188, 177, 7, 165, 170
+```
+
+
+```{r}
+#Visualizar matrizes criadas
+
+dataprep.out$X1
+ dataprep.out$Z1
+
+```
+
+```{r}
+### Encontrar W e V ótimos:
+## i) custom.v: Pode ser usado para imputar V, ou
+## ii) default: Escolhe V (entre matrizes diagonais) t.q. 
+## EQM de Y seja minimizado nos periodos pré-intervenção
+## Seja Z vetor das variáveis YP, encontrar V que minimiza
+## (Z1-Z0.W*(V))'(Z1-Z0.W*(V))
+## Portanto, synth minimiza a distancia de X, considerando
+## a V acima
+
+## Otimizaçao: Usa função de otimização quadrática com
+## restrição, mas pode ser alterado
+
+# Comando Synth: Encontra o W ótimo e V ótimo que identifica o controle sintético 
+# resolvendo um algoritmo de otimização para minimizar a distância entre X1
+# e X0
+
+###################################################
+ synth.out <- synth(data.prep.obj = dataprep.out,
+                    method = "BFGS")
+#ls(synth.out)
+
+gaps<- dataprep.out$Y1plot-(dataprep.out$Y0plot%*%synth.out$solution.w)
+
+DT_gap <- dataprep.out$Y1plot-(dataprep.out$Y0plot%*%synth.out$solution.w) %>% 
+  as.data.frame()
+
+```
+
+```{r}
+###################################################
+### Discrepâncias anuais no GDP do tratado e sintético: 
+###################################################
+ gaps <- dataprep.out$Y1plot - (dataprep.out$Y0plot %*% synth.out$solution.w)
+
+
+```
+
+```{r}
+#tabelas
+
+ synth.tables <- synth.tab(dataprep.res = dataprep.out,
+                           synth.res = synth.out
+                           )
+names(synth.tables)
+synth.tables$tab.w
+synth.tables$tab.pred
+synth.tables$tab.pred
+synth.tables$tab.v
+tabela_t <- as.data.frame(synth.tables$tab.pred)
+tabela_v <- as.data.frame(synth.tables$tab.v)
+tabela_w <- as.data.frame(synth.tables$tab.w)
+```
+
+
+```{r}
+#tabela T
+tabela_t <- tabela_t %>%
+  add_rownames(var = "Covariate") %>% 
+  filter(Covariate!= "special.final_consumption_expenditure_annual_growth.2003.2011")
+tabela_t <- tabela_t %>% 
+  mutate(Covariate = recode(Covariate,
+                               gdp_per_capita_constant_2010_us = "GDP per capita", 
+                               gdp_growth_annual = "GDP growth",
+                               foreign_direct_investment_net_inflows_of_gdp = "FDI/GDP",
+                               final_consumption_expenditure_annual_growth = "Consumption Expenditure Growth",
+                                index_ef = "Economic Freedom Index"))
+tabela_t
+tabela_t %>% 
+  kbl() %>%
+  kable_classic(full_width = F, html_font = "Cambria")
+```
+
+
+```{r}
+#tabelaV
+tabela_v <- tabela_v %>%
+  add_rownames(var = "Covariate") %>% 
+  filter(Covariate!= "special.final_consumption_expenditure_annual_growth.2003.2011")
+tabela_v <- tabela_v %>% 
+  mutate(Covariate = recode(Covariate,
+                               gdp_per_capita_constant_2010_us = "GDP per capita", 
+                               gdp_growth_annual = "GDP growth",
+                               foreign_direct_investment_net_inflows_of_gdp = "FDI/GDP",
+                               final_consumption_expenditure_annual_growth = "Consumption Expenditure Growth",
+                                index_ef = "Economic Freedom Index"))
+
+tabela_v
+tabela_v %>% 
+  kbl() %>%
+  kable_classic(full_width = F, html_font = "Cambria")
+```
+  
+```{r}
+
+#tabela W
+tabela_w <- tabela_w %>%
+ select(unit.names,w.weights)
+tabela_w %>% 
+  kbl() %>%
+   kable_classic(full_width = F, html_font = "Cambria")
+
+```
+
+
+```{r}
+###################################################
+### # Resumindo resultados (pesos):: 
+###################################################
+synth.out$solution.w
+synth.tables$tab.w
+	
+```
+
+```{r}
+path_plot <- path.plot(synth.res = synth.out,
+          dataprep.res = dataprep.out, 
+					Ylab         = c("Number of cross-border M&A"),
+          Xlab         = c("Year"),
+          Legend       = c("Brazil","Synthetic Brazil"),
+          Legend.position = c("topleft")
+					
+					)
+abline(v   = 2011,
+       lty = 2)
+```
+
+```{r}
+
+gaps.plot(synth.res = synth.out,
+           dataprep.res = dataprep.out,
+           Ylab = "Gap in Cross-Border M&A",
+           Xlab = "Year",
+           Ylim = c(-50,200),
+            Main = NA
+           )
+xaxt="none"
+
+abline(v   = 2011,
+       lty = 2)
+```
+
+```{r}
+#ggthemr("greyscale")
+placebo <- generate_placebos(dataprep.out = dataprep.out,
+                             synth.out = synth.out, strategy = "multiprocess", Sigf.ipop = 2)
+
+p <- plot_placebos(placebo)
+p2 <- p
+#######33333#############################3
+
+p +
+   labs(
+    y = "Gap in Cross-Border M&A",
+    x = "Year"
+  )+
+ ylim(c(-170,250))+
+  theme(legend.position = "top")
+```
+```{r}
+########################################3
+ratio <- mspe.test(placebo)
+ratio$p.val
+
+#ggthemr::ggthemr("greyscale")
+mspe_plot <- mspe.plot(placebo, discard.extreme = FALSE)
+mspe_plot + labs(x = "Post-/Pre-RMSPE") + theme_bw()
+save_plot("emergentes.png", fig = ggplot2::last_plot(), width = 18, height = 10,
+  dpi = 300, theme = ggplot2::theme_get(), label.color = "black",
+  label.size = 2.4, axis.textsize = 0.8, axis.titlesize = 0.75,
+  legend.textsize = 0.6, legend.titlesize = 0.65, legend.itemsize = 0.5)
+```
+
+```{r}
+test_out <- mspe.test(placebo)
+test_out$p.val
+```
+
+
+```{r eval=FALSE, include=FALSE}
+
+ mult.dataprep.out <-multiple.synth(foo = as.data.frame(placebos_rodar),
+                       predictors = c("gdp_per_capita_constant_2010_us",
+                                      "gdp_growth_annual",
+                                      "foreign_direct_investment_net_inflows_of_gdp",                                                                         "final_consumption_expenditure_of_gdp",
+                                      "index_ef")  ,
+                       
+                      special.predictors =list( list("gdp_per_capita_constant_2010_us",seq(2003,2011,2),c("mean"))),
+                       
+                       predictors.op = "mean" ,
+                       time.predictors.prior = 2000:2010 ,
+                       dependent = "number",
+                       unit.variable = "regio",
+                       treatment.time = 2011,
+                       unit.names.variable = "region_economy" ,
+                       time.variable = "ano",
+                       treated.units = 23,
+                       control.units = c(155, 194, 195,35, 91, 66, 82, 30, 132, 160, 188, 177, 7, 165, 170),
+                       time.optimize.ssr = 2000:2010,
+                       time.plot = 2000:2018,
+                       gen.placebos =  TRUE
+                       )
+
+ggthemr("greyscale")
+p_multi <- mult.dataprep.out$p
+
+p_multi +
+  theme(legend.position = "Bottom")
+
+
+
+```
+
