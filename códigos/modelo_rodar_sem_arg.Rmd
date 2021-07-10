@@ -9,6 +9,8 @@ editor_options:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+
 library(tidyverse)
 library(Synth)
 library(readr)
@@ -27,7 +29,7 @@ library(ggthemr)
 
 
 ```{r}
-ggthemr("greyscale")
+#ggthemr("greyscale")
 ```
 
 
@@ -234,7 +236,7 @@ abline(v   = 2011,
 ```{r}
 #usando o pacote SCtools
 
-ggthemr("greyscale")
+#ggthemr("greyscale")
 placebo <- generate_placebos(dataprep.out = dataprep.out,
                              synth.out = synth.out, strategy = "multiprocess", Sigf.ipop = 2)
 
@@ -259,10 +261,14 @@ save_plot("p.png", fig = ggplot2::last_plot(), width = 15, height = 10,
 ratio <- mspe.test(placebo)
 ratio$p.val
 
-ggthemr::ggthemr("greyscale")
+#ggthemr::ggthemr("greyscale")
 mspe_plot <- mspe.plot(placebo, discard.extreme = FALSE)
-mspe_plot
-save_plot("rsme.png", fig = ggplot2::last_plot(), width = 15, height = 10,
+mspe_plot + labs( x = "Post-/Pre-RMSPE") +
+  theme_bw()
+
+
+  
+save_plot("revisadosemARG.png", fig = ggplot2::last_plot(), width = 15, height = 10,
   dpi = 300, theme = ggplot2::theme_get(), label.color = "black",
   label.size = 2.4, axis.textsize = 0.8, axis.titlesize = 0.75,
   legend.textsize = 0.6, legend.titlesize = 0.65, legend.itemsize = 0.5)
@@ -283,7 +289,7 @@ test_out$p.val
 
 ```{r}
 #####
-ggthemr("greyscale")
+#ggthemr("greyscale")
 donnor <- as_data_frame(synth.tables$tab.w)
 
 
